@@ -1,12 +1,12 @@
-# ArcWind Template
-[![Latest Stable Version](https://poser.pugx.org/arcwindab/template/v/stable.svg)](https://packagist.org/packages/arcwindab/template)
-[![Latest Unstable Version](https://poser.pugx.org/arcwindab/template/v/unstable.svg)](https://packagist.org/packages/arcwindab/template)
-[![Build Status](https://travis-ci.org/arcwindab/template.svg)](https://travis-ci.org/arcwindab/template)  
+# ArcWind BotTrap
+[![Latest Stable Version](https://poser.pugx.org/arcwindab/bottrap/v/stable.svg)](https://packagist.org/packages/arcwindab/bottrap)
+[![Latest Unstable Version](https://poser.pugx.org/arcwindab/bottrap/v/unstable.svg)](https://packagist.org/packages/arcwindab/bottrap)
+[![Build Status](https://travis-ci.org/arcwindab/bottrap.svg)](https://travis-ci.org/arcwindab/bottrap)  
 
-[![Total Downloads](https://poser.pugx.org/arcwindab/template/downloads)](https://packagist.org/packages/arcwindab/template)
-[![GitHub issues open](https://img.shields.io/github/issues/arcwindab/template.svg)](https://github.com/arcwindab/template/issues)
+[![Total Downloads](https://poser.pugx.org/arcwindab/bottrap/downloads)](https://packagist.org/packages/arcwindab/bottrap)
+[![GitHub issues open](https://img.shields.io/github/issues/arcwindab/bottrap.svg)](https://github.com/arcwindab/bottrap/issues)
 
-[![License](https://poser.pugx.org/arcwindab/template/license.svg)](https://packagist.org/packages/arcwindab/template)
+[![License](https://poser.pugx.org/arcwindab/bottrap/license.svg)](https://packagist.org/packages/arcwindab/bottrap)
 
 ## Disclaimer
 In the words of Abraham Lincoln:
@@ -16,11 +16,11 @@ My English, and technical terms in code, is not very good - I'm not a native spe
 Sorry for any confusion that may occur.
 
 ## Install
-ArcWind Template is available on [Packagist](https://packagist.org/packages/arcwindab/template) and installation via Composer is the recommended way to install ArcWind Template. Just add this line to your composer.json file:
+ArcWind BotTrap is available on [Packagist](https://packagist.org/packages/arcwindab/bottrap) and installation via Composer is the recommended way to install ArcWind BotTrap. Just add this line to your composer.json file:
 ```
-"arcwindab/template": "@dev"
+"arcwindab/bottrap": "@dev"
 ```
 or run
 ```
-composer require arcwindab/template
+composer require arcwindab/bottrap
 ```
