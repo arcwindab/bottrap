@@ -24,3 +24,14 @@ or run
 ```
 composer require arcwindab/bottrap
 ```
+## Run
+```
+<?php
+//Load Composer's autoloader
+require 'vendor/autoload.php';
+
+//Create an instance; passing my own user agent
+$botrap = new arcwindab\bottrap();  
+echo $botrap->email('test+prof@bot.example.com');  
+echo $botrap->email('+46 77 114 14 00');  
+```

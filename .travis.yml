@@ -19,4 +19,5 @@ install:
   - composer install
 
 script: 
-  - php test/index.php
+  - php test/email.php
+  - php test/phone.php
