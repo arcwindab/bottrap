@@ -114,7 +114,7 @@ namespace arcwindab {
             $parts["top"]     = substr(strrchr($email, '.'), 1);
 
             if($title == '') {
-               $text = $parts["prefix"].' [at] '.$parts["domain"].' [dot] '.$parts["top"];
+               $text = $parts["prefix"].' at '.$parts["domain"].' dot '.$parts["top"];
             }
             
             if($text != '') {
