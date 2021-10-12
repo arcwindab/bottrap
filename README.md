@@ -1,7 +1,7 @@
 # ArcWind BotTrap
 [![Latest Stable Version](https://poser.pugx.org/arcwindab/bottrap/v/stable.svg)](https://packagist.org/packages/arcwindab/bottrap)
 [![Latest Unstable Version](https://poser.pugx.org/arcwindab/bottrap/v/unstable.svg)](https://packagist.org/packages/arcwindab/bottrap)
-[![Build Status](https://travis-ci.org/arcwindab/bottrap.svg)](https://travis-ci.org/arcwindab/bottrap)  
+[![Build Status](https://travis-ci.com/arcwindab/bottrap.svg)]  
 
 [![Total Downloads](https://poser.pugx.org/arcwindab/bottrap/downloads)](https://packagist.org/packages/arcwindab/bottrap)
 [![GitHub issues open](https://img.shields.io/github/issues/arcwindab/bottrap.svg)](https://github.com/arcwindab/bottrap/issues)
