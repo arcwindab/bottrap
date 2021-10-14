@@ -2,6 +2,10 @@
 
 $bottrap = new arcwindab\bottrap();
 echo $bottrap->email('test+prof@bot.example.com').'<hr>';
+echo $bottrap->email('test+2@bot.example.com').'<hr>';
+
+$bottrap->set_copytext('Kopierat');
+echo $bottrap->email('test@bot.example.com').'<hr>';
 
 $bottrap->set_obfuscate(false);
 echo $bottrap->email('test+prof@bot.example.com');
