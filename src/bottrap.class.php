@@ -16,7 +16,7 @@ namespace arcwindab {
        *
        * @var string
        */
-      protected $version = '0.1';
+      protected $version = '0.2';
       
       /**
        * Should the output be obfuscated or false for clean
@@ -32,6 +32,12 @@ namespace arcwindab {
        */
       protected $international = false;
       
+      /**
+       * Text in copy popup
+       *
+       * @var string
+       */
+      protected $copytext = 'Copied';
       
       /**
        * Should output be obfuscated or false for clean
@@ -43,6 +49,23 @@ namespace arcwindab {
       public function set_obfuscate($bool) {
          if(is_bool($bool)) {
             $this->obfuscate = $bool;
+            
+            return true;
+         }
+         
+         return false;
+      }
+      
+      /**
+       * Set what should be shown in copy popup
+       *
+       * @param string $str       Copytext
+       *
+       * @return bool
+       */
+      public function set_copytext($str) {
+         if(is_string($str)) {
+            $this->copytext = $str;
             
             return true;
          }
@@ -88,6 +111,7 @@ namespace arcwindab {
          $str              = '';
          $title            = trim($title);
          $text             = $title;
+         $copytext         = '';
          
          $db = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS)[0];
          if((isset($db['class'])) && ($db['class'] == 'arcwindab\bottrap')) {
@@ -99,6 +123,10 @@ namespace arcwindab {
             if(($incontext) && (isset($this->obfuscate)) && ($this->obfuscate === false)) {
                return $email;
             } 
+            
+            if($incontext) {
+               $copytext   = $this->copytext;
+            }
             
             $q = array();
             if($subject!="") {
@@ -118,7 +146,7 @@ namespace arcwindab {
             }
             
             if($text != '') {
-               ob_start(); ?><span style="cursor:pointer;" data-id="<?php echo $id; ?>"><?php echo $text; ?></span>
+               ob_start(); ?><span style="cursor:pointer;position:relative;" data-id="<?php echo $id; ?>"><?php echo $text; ?></span>
 <script>
    var a<?php echo $id; ?> = false;
    b<?php echo $id; ?>();
@@ -132,16 +160,31 @@ namespace arcwindab {
       } else {<?php if($title != '') { ?> 
          t= "<?php echo $title; ?>";<?php } ?> 
          $("[data-id='<?php echo $id; ?>']").html('<span class="fa-fw"></span>');
-         if($("[data-id='<?php echo $id; ?>'] .fa-fw").css('text-align') == 'center') {icon = '<?php echo $icon; ?>';}
+         if($("[data-id='<?php echo $id; ?>'] .fa-fw").css('text-align') == 'center') {icon = '<?php echo addslashes($icon); ?>';}
          $("[data-id='<?php echo $id; ?>']").html((icon != '' ? "<i class='fal fa-fw fa-" + icon + "'></i>&#32;" : '') + t);
 
-         $("[data-id='<?php echo $id; ?>']").on("click", function(event) {
+         $("[data-id='<?php echo $id; ?>']").on("click contextmenu", function(event) {
             event.preventDefault();
-            var t = mio + e.replace('&#46;', '.').replace('&#64;', '@')<?php echo (!empty($q) ? ' + "?' . implode('&', $q).'"' : ''); ?>;
+            var t = e.replace('&#46;', '.').replace('&#64;', '@');
 
             if(event.type == 'click') {
-               location.href = t;
-            }
+               location.href = mio + t<?php echo (!empty($q) ? ' + "?' . implode('&', $q).'"' : ''); ?>;
+            } else if(event.type == 'contextmenu') {
+               var $temp = $("<input>"), text = '<?php echo addslashes($copytext); ?>';
+               $("body").append($temp);
+               $temp.val(t).select();
+               document.execCommand("copy");
+               $temp.remove();
+               
+               if($("[data-id='<?php echo $id; ?>'] .fa-fw").css('text-align') == 'center') {
+                  text = '<i class="fal fa-copy fa-fw"></i> ' + text;
+               } 
+               
+               $("[data-id='<?php echo $id; ?>']").append('<span style="width: 120px;background-color: #000000;color: #ffffff;text-align: center;border-radius: 6px;padding: 5px 0;position: absolute;z-index: 1;bottom: 100%;left: 50%;margin-left: -60px;">' + text + '</span>');
+               setTimeout(function() {
+                  $("[data-id='<?php echo $id; ?>'] span").fadeOut(1000);
+               }, 1000)
+             }
          });
       }
    }
@@ -176,6 +219,8 @@ namespace arcwindab {
          $title                     = trim($title);
          $text                      = $title;
          
+         $copytext                  = '';
+         
          $db = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS)[0];
          if((isset($db['class'])) && ($db['class'] == 'arcwindab\bottrap')) {
             $incontext = true;
@@ -183,7 +228,8 @@ namespace arcwindab {
          
          if($number != '') {
             if($incontext) {
-               $numbers = $this->format_numbers($number)[0];
+               $copytext   = $this->copytext;
+               $numbers    = $this->format_numbers($number)[0];
                
                if($this->international == true) {
                   if((isset($numbers['number'])) && ($numbers['number'] != '')) {
@@ -216,7 +262,7 @@ namespace arcwindab {
             }
             
             if($text != '') {
-               ob_start(); ?><span style="cursor:pointer;" data-id="<?php echo $id; ?>"><?php echo $text; ?></span>
+               ob_start(); ?><span style="cursor:pointer;position:relative;" data-id="<?php echo $id; ?>"><?php echo $text; ?></span>
 <script>
    var a<?php echo $id; ?> = false;
    b<?php echo $id; ?>();
@@ -233,13 +279,28 @@ namespace arcwindab {
          if($("[data-id='<?php echo $id; ?>'] .fa-fw").css('text-align') == 'center') {icon = '<?php echo $icon; ?>';}
          $("[data-id='<?php echo $id; ?>']").html((icon != '' ? "<i class='fal fa-fw fa-" + icon + "'></i>&#32;" : '') + t);
 
-         $("[data-id='<?php echo $id; ?>']").on("click", function(event) {
+         $("[data-id='<?php echo $id; ?>']").on("click contextmenu", function(event) {
             event.preventDefault();
-            t = mio + n;
+            var t = n;
 
             if(event.type == 'click') {
-               location.href = t;
-            }
+               location.href = mio + t;
+            } else if(event.type == 'contextmenu') {
+               var $temp = $("<input>"), text = '<?php echo addslashes($copytext); ?>';
+               $("body").append($temp);
+               $temp.val(t).select();
+               document.execCommand("copy");
+               $temp.remove();
+               
+               if($("[data-id='<?php echo $id; ?>'] .fa-fw").css('text-align') == 'center') {
+                  text = '<i class="fal fa-copy fa-fw"></i> ' + text;
+               } 
+               
+               $("[data-id='<?php echo $id; ?>']").append('<span style="width: 120px;background-color: #000000;color: #ffffff;text-align: center;border-radius: 6px;padding: 5px 0;position: absolute;z-index: 1;bottom: 100%;left: 50%;margin-left: -60px;">' + text + '</span>');
+               setTimeout(function() {
+                  $("[data-id='<?php echo $id; ?>'] span").fadeOut(1000);
+               }, 1000)
+             }
          });
       }
    }
