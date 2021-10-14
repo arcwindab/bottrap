@@ -151,7 +151,7 @@ namespace arcwindab {
    var a<?php echo $id; ?> = false;
    b<?php echo $id; ?>();
    function b<?php echo $id; ?>() {
-      var icon = '', top = "<?php echo $parts["top"]; ?>", pre = "<?php echo $parts["prefix"]; ?>", dom = "<?php echo $parts["domain"]; ?>", e = pre + '&#64;' + dom + '&#46;' + top, t = e, i = 'il', o = 'to', m = 'ma', mio = m+i+o+':';
+      var icon = '', top = "<?php echo $parts["top"]; ?>", pre = "<?php echo $parts["prefix"]; ?>", dom = "<?php echo $parts["domain"]; ?>", e = pre + '&#'+'64;' + dom + '&#'+'46;' + top, t = e, i = 'il', o = 'to', m = 'ma', mio = m+i+o+':';
       if(typeof(jQuery) == "undefined") {
          if(!a<?php echo $id; ?>) {a<?php echo $id; ?> = true;
             document.write("<scr" + "ipt type=\'text/javascript\' src=\'//code.jquery.com/jquery-3.6.0.min.js\'></scr" + "ipt>");
@@ -165,7 +165,7 @@ namespace arcwindab {
 
          $("[data-id='<?php echo $id; ?>']").on("click contextmenu", function(event) {
             event.preventDefault();
-            var t = e.replace('&#46;', '.').replace('&#64;', '@');
+            var t = e.replace('&#'+'46;', '.').replace('&#'+'64;', '@');
 
             if(event.type == 'click') {
                location.href = mio + t<?php echo (!empty($q) ? ' + "?' . implode('&', $q).'"' : ''); ?>;
@@ -183,6 +183,9 @@ namespace arcwindab {
                $("[data-id='<?php echo $id; ?>']").append('<span style="width: 120px;background-color: #000000;color: #ffffff;text-align: center;border-radius: 6px;padding: 5px 0;position: absolute;z-index: 1;bottom: 100%;left: 50%;margin-left: -60px;">' + text + '</span>');
                setTimeout(function() {
                   $("[data-id='<?php echo $id; ?>'] span").fadeOut(1000);
+                  setTimeout(function() {
+                     $("[data-id='<?php echo $id; ?>'] span").remove();
+                  }, 1000)
                }, 1000)
              }
          });
@@ -299,6 +302,9 @@ namespace arcwindab {
                $("[data-id='<?php echo $id; ?>']").append('<span style="width: 120px;background-color: #000000;color: #ffffff;text-align: center;border-radius: 6px;padding: 5px 0;position: absolute;z-index: 1;bottom: 100%;left: 50%;margin-left: -60px;">' + text + '</span>');
                setTimeout(function() {
                   $("[data-id='<?php echo $id; ?>'] span").fadeOut(1000);
+                  setTimeout(function() {
+                     $("[data-id='<?php echo $id; ?>'] span").remove();
+                  }, 1000)
                }, 1000)
              }
          });
