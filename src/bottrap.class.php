@@ -180,7 +180,7 @@ namespace arcwindab {
                   text = '<i class="fal fa-copy fa-fw"></i> ' + text;
                } 
                
-               $("[data-id='<?php echo $id; ?>']").append('<span style="width: 120px;background-color: #000000;color: #ffffff;text-align: center;border-radius: 6px;padding: 5px 0;position: absolute;z-index: 1;bottom: 100%;left: 50%;margin-left: -60px;">' + text + '</span>');
+               $("[data-id='<?php echo $id; ?>']").append('<span style="min-width: 100px;background-color: #000000;color: #ffffff;text-align: center;border-radius: 6px;padding: 5px 0;position: absolute;z-index: 1;bottom: 100%;left: 50%;margin-left: -60px;">' + text + '</span>');
                setTimeout(function() {
                   $("[data-id='<?php echo $id; ?>'] span").fadeOut(1000);
                   setTimeout(function() {
@@ -299,7 +299,7 @@ namespace arcwindab {
                   text = '<i class="fal fa-copy fa-fw"></i> ' + text;
                } 
                
-               $("[data-id='<?php echo $id; ?>']").append('<span style="width: 120px;background-color: #000000;color: #ffffff;text-align: center;border-radius: 6px;padding: 5px 0;position: absolute;z-index: 1;bottom: 100%;left: 50%;margin-left: -60px;">' + text + '</span>');
+               $("[data-id='<?php echo $id; ?>']").append('<span style="min-width: 100px;background-color: #000000;color: #ffffff;text-align: center;border-radius: 6px;padding: 5px 0;position: absolute;z-index: 1;bottom: 100%;left: 50%;margin-left: -60px;">' + text + '</span>');
                setTimeout(function() {
                   $("[data-id='<?php echo $id; ?>'] span").fadeOut(1000);
                   setTimeout(function() {
