@@ -102,11 +102,11 @@ namespace arcwindab {
             
             $q = array();
             if($subject!="") {
-               $q[] = "subject=".addslashes(urlencode($subject));
+               $q[] = "subject=".str_replace(array('+', '%250D%250A'), array('%20', '%0D%0A'), addslashes(urlencode($subject)));
             }
             
             if($body!="") {
-               $q[] = "body=".addslashes(urlencode($body));
+               $q[] = "body=".str_replace(array('+', '%250D%250A'), array('%20', '%0D%0A'), addslashes(urlencode($body)));
             }
             
             $parts["prefix"]  = substr($email, 0, strrpos($email, '@'));
