@@ -13,8 +13,7 @@
     "license"        : "MIT",
     
     "require" : {
-        "php" : ">=5.6.33",
-        "matthiasmullie/minify" : "@dev"
+        "php" : ">=5.6.33"
     },
     
     "suggest": {
