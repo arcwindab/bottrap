@@ -8,9 +8,8 @@
 
 namespace arcwindab {
    include_once dirname(__FILE__).'/phones.trait.php';
-   require_once dirname(__FILE__).'../lib/minify/src/Minify.php';
-   require_once dirname(__FILE__).'../minify/src/CSS.php';
-   require_once dirname(__FILE__).'../minify/src/JS.php';
+   require_once dirname(__FILE__).'/../lib/minify/src/Minify.php';
+   require_once dirname(__FILE__).'/../lib/minify/src/JS.php';
    
    class bottrap {
       use phone_formats;
