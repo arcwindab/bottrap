@@ -8,8 +8,15 @@
 
 namespace arcwindab {
    include_once dirname(__FILE__).'/phones.trait.php';
+
+   //matthiasmullie / minify
    require_once dirname(__FILE__).'/../lib/minify/src/Minify.php';
+   require_once dirname(__FILE__).'/../lib/minify/src/CSS.php';
    require_once dirname(__FILE__).'/../lib/minify/src/JS.php';
+   require_once dirname(__FILE__).'/../lib/minify/src/Exception.php';
+   require_once dirname(__FILE__).'/../lib/minify/src/Exceptions/BasicException.php';
+   require_once dirname(__FILE__).'/../lib/minify/src/Exceptions/FileImportException.php';
+   require_once dirname(__FILE__).'/../lib/minify/src/Exceptions/IOException.php';
    
    class bottrap {
       use phone_formats;
@@ -18,7 +25,7 @@ namespace arcwindab {
        *
        * @var string
        */
-      protected $version = '0.2';
+      protected $version = '0.3';
       
       /**
        * Should the output be obfuscated or false for clean
@@ -27,6 +34,13 @@ namespace arcwindab {
        */
       protected $obfuscate = true;
       
+      /**
+       * Should the output be minified
+       *
+       * @var bool
+       */
+      protected $minify = true;
+
       /**
        * Should the output be international formated
        *
@@ -192,11 +206,11 @@ namespace arcwindab {
             
             if($text != '') {
                ob_start(); ?><span data-id="<?php echo $id; ?>"><?php echo $text; ?></span>
-<script>
+<script><?php ob_start(); ?> 
    var a<?php echo $id; ?> = false;
    b<?php echo $id; ?>();
    function b<?php echo $id; ?>() {
-      var icon = '', top = "<?php echo $parts["top"]; ?>", pre = "<?php echo $parts["prefix"]; ?>", dom = "<?php echo $parts["domain"]; ?>", e = pre + '&#'+'64;' + dom + '&#'+'46;' + top, t = e, i = 'il', o = 'to', m = 'ma', mio = m+i+o+':';
+      var icon = '', top = "<?php echo $parts["top"]; ?>", pre = "<?php echo $parts["prefix"]; ?>", dom = "<?php echo $parts["domain"]; ?>", e = pre + '&#'+'64;' + dom + '&#'+'46;' + top, t = e, i = 'il', o = 'to', m = 'ma', mio = m+i+o+':', f = 2000;
       if(typeof(jQuery) == "undefined") {
          if(!a<?php echo $id; ?>) {a<?php echo $id; ?> = true;
             document.write("<scr" + "ipt type=\'text/javascript\' src=\'//code.jquery.com/jquery-3.6.0.min.js\'></scr" + "ipt>");
@@ -222,26 +236,29 @@ namespace arcwindab {
                document.execCommand("copy");
                $temp.remove();
                
-               if($("[data-id='<?php echo $id; ?>'] .fa-fw").css('text-align') == 'center') {
+               if(icon != '') {
                   text = '<i class="fal fa-copy fa-fw"></i> ' + text;
                } 
                
                $("[data-id='<?php echo $id; ?>']").css('position', 'relative').append('<span style="min-width: 100px;background-color: #000000;color: #ffffff;text-align: center;border-radius: 6px;padding: 5px 0;position: absolute;z-index: 1;bottom: 100%;left: 50%;margin-left: -60px;">' + text + '</span>');
                setTimeout(function() {
-                  $("[data-id='<?php echo $id; ?>'] span").fadeOut(1000);
+                  $("[data-id='<?php echo $id; ?>'] span").fadeOut((f / 2));
                   setTimeout(function() {
                      $("[data-id='<?php echo $id; ?>'] span").remove();
-                  }, 1000)
-               }, 1000)
+                  }, (f / 2))
+               }, (f / 2))
              }
          });
       }
-   }<?php $script = ob_get_clean(); 
-   
-   $minifier = new MatthiasMullie\Minify\Minify\JS($sourcePath);
-   $minifier->add($script);
-   echo $minifier->minify();
-return;
+   }<?php $script = ob_get_clean();  
+
+   if(($incontext) && ((isset($this->minify)) && ($this->minify === true)) && (class_exists('\MatthiasMullie\Minify\JS'))) {
+       $minifier = new \MatthiasMullie\Minify\JS();
+       $minifier->add($script);
+       echo str_replace(array("\n", "\r"), '', $minifier->minify());
+   } else {
+       echo $script;
+   }
     ?>
 </script><?php return ob_get_clean();
             }
@@ -331,7 +348,7 @@ return;
    var a<?php echo $id; ?> = false;
    b<?php echo $id; ?>();
    function b<?php echo $id; ?>() {
-      var icon = '', n = "<?php echo $plain; ?>", t = "<?php echo $text; ?>", i = 'e', o = 'l', m = 't', mio = m+i+o+':';
+      var icon = '', n = "<?php echo $plain; ?>", t = "<?php echo $text; ?>", i = 'e', o = 'l', m = 't', mio = m+i+o+':', f = 2000;
       if(typeof(jQuery) == "undefined") {
          if(!a<?php echo $id; ?>) {a<?php echo $id; ?> = true;
             document.write("<scr" + "ipt type=\'text/javascript\' src=\'//code.jquery.com/jquery-3.6.0.min.js\'></scr" + "ipt>");
@@ -357,21 +374,30 @@ return;
                document.execCommand("copy");
                $temp.remove();
                
-               if($("[data-id='<?php echo $id; ?>'] .fa-fw").css('text-align') == 'center') {
+               if(icon != '') {
                   text = '<i class="fal fa-copy fa-fw"></i> ' + text;
                } 
                
                $("[data-id='<?php echo $id; ?>']").css('position', 'relative').append('<span style="min-width: 100px;background-color: #000000;color: #ffffff;text-align: center;border-radius: 6px;padding: 5px 0;position: absolute;z-index: 1;bottom: 100%;left: 50%;margin-left: -60px;">' + text + '</span>');
                setTimeout(function() {
-                  $("[data-id='<?php echo $id; ?>'] span").fadeOut(1000);
+                  $("[data-id='<?php echo $id; ?>'] span").fadeOut((f / 2));
                   setTimeout(function() {
                      $("[data-id='<?php echo $id; ?>'] span").remove();
-                  }, 1000)
-               }, 1000)
+                  }, (f / 2))
+               }, (f / 2))
              }
          });
       }
+   }<?php $script = ob_get_clean();  
+
+   if(($incontext) && ((isset($this->minify)) && ($this->minify === true)) && (class_exists('\MatthiasMullie\Minify\JS'))) {
+       $minifier = new \MatthiasMullie\Minify\JS();
+       $minifier->add($script);
+       echo str_replace(array("\n", "\r"), '', $minifier->minify());
+   } else {
+       echo $script;
    }
+    ?>
 </script><?php return ob_get_clean();
             }
          }
