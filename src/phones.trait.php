@@ -23,7 +23,7 @@ namespace arcwindab {
             $phone = trim(preg_replace('/[^\d\+]/', '', ($phone)));
             if($phone != '') {
                if(substr($phone, 0, strlen('00')) === '00') {
-                  $phone = str_replace('00', '+', $phone);
+                  $phone = '+'.substr($phone, strlen('00'));
                }
                
                $plain = preg_replace('/[^\d]/', '', str_replace('+', '00', $phone));
