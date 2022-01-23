@@ -63,6 +63,13 @@ namespace arcwindab {
       protected $copytext = 'Copied';
       
       /**
+       * Save array
+       *
+       * @var array
+       */
+      protected $saved = array();
+      
+      /**
        * Should output be obfuscated or false for clean
        *
        * @param bool $bool       True/false
@@ -156,7 +163,7 @@ namespace arcwindab {
        */
       function email($email, $icon = "at", $title = "", $subject = "", $body = "") {
          $incontext        = false;
-         $email            = strtolower(trim($email));
+         $email = $e       = strtolower(trim($email));
          $id               = rand(10,99)."".uniqid(); 
          $str              = '';
          $title            = trim($title);
@@ -166,6 +173,11 @@ namespace arcwindab {
          $db = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS)[0];
          if((isset($db['class'])) && ($db['class'] == 'arcwindab\bottrap')) {
             $incontext = true;
+         }
+         if($incontext) {
+            if(isset($this->saved[$e])) {
+               return $this->saved[$e];
+            }
          }
          
          if((!filter_var($email, FILTER_VALIDATE_EMAIL) === false) && (strpos($email, '@') !== false)) {
@@ -260,10 +272,20 @@ namespace arcwindab {
        echo $script;
    }
     ?>
-</script><?php return ob_get_clean();
+</script><?php 
+               
+               $c = ob_get_clean();
+               if($incontext) {
+                  $this->saved[$e] = $c;
+               }
+               
+               return $c;
             }
          }
          
+         if($incontext) {
+            $this->saved[$e] = $email;
+         }
          
          return $email;
       }
@@ -286,6 +308,7 @@ namespace arcwindab {
       function phone($number, $icon = "phone", $title = "") {
          $incontext                 = false;
          $number = $local = $plain  = trim(preg_replace('/\s+/', ' ', preg_replace('/[^\d\s\+]/', '', ($number))));
+         $n                         = preg_replace("/[^0-9]/", "", $number);
          $id                        = rand(10,99)."".uniqid(); 
          $str                       = '';
          $title                     = trim($title);
@@ -300,6 +323,10 @@ namespace arcwindab {
          
          if($number != '') {
             if($incontext) {
+               if(isset($this->saved[$n])) {
+                  return $this->saved[$n];
+               }
+               
                $copytext   = $this->copytext;
                $numbers    = $this->format_numbers($number)[0];
                
@@ -397,11 +424,22 @@ namespace arcwindab {
    } else {
        echo $script;
    }
+               
+   
     ?>
-</script><?php return ob_get_clean();
+</script><?php 
+               $c = ob_get_clean();
+               if($incontext) {
+                  $this->saved[$n] = $c;
+               }
+               
+               return $c;
             }
          }
          
+         if($incontext) {
+            $this->saved[$n] = $number;
+         }
          
          return $number;
       }
