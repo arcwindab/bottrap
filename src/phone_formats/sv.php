@@ -9,7 +9,7 @@ if(($found['number'] == '') && (($substr[4] === '+467') && ($len == 12))) {
    //Mobil (07) : 12 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 2) . ' ' . substr($phone, 8, 2) . ' ' . substr($phone, 10, 2);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Mobil', 'region' => '', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[4] === '+468') && ($len == 10))) {
    //Stockholm in Stockholms län (08) : 10 digit
@@ -27,7 +27,7 @@ if(($found['number'] == '') && (($substr[4] === '+468') && ($len == 10))) {
    //Stockholm in Stockholms län (08) : 13 digit
    $num = substr($phone, 3, 1) . ' - ' . substr($phone, 4, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Stockholm', 'region' => 'Stockholms län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[5] === '+4611') && ($len == 11))) {
    //Norrköping in Östergötlands län (011) : 10 digit
@@ -45,7 +45,7 @@ if(($found['number'] == '') && (($substr[5] === '+4611') && ($len == 11))) {
    //Norrköping in Östergötlands län (011) : 13 digit
    $num = substr($phone, 3, 2) . ' - ' . substr($phone, 5, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Norrköping', 'region' => 'Östergötlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[5] === '+4613') && ($len == 11))) {
    //Linköping in Östergötlands län (013) : 10 digit
@@ -63,7 +63,7 @@ if(($found['number'] == '') && (($substr[5] === '+4613') && ($len == 11))) {
    //Linköping in Östergötlands län (013) : 13 digit
    $num = substr($phone, 3, 2) . ' - ' . substr($phone, 5, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Linköping', 'region' => 'Östergötlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[5] === '+4616') && ($len == 11))) {
    //Eskilstuna-Torshälla in Södermanlands län (016) : 10 digit
@@ -81,7 +81,7 @@ if(($found['number'] == '') && (($substr[5] === '+4616') && ($len == 11))) {
    //Eskilstuna-Torshälla in Södermanlands län (016) : 13 digit
    $num = substr($phone, 3, 2) . ' - ' . substr($phone, 5, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Eskilstuna-Torshälla', 'region' => 'Södermanlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[5] === '+4618') && ($len == 11))) {
    //Uppsala in Uppsala län (018) : 10 digit
@@ -99,7 +99,7 @@ if(($found['number'] == '') && (($substr[5] === '+4618') && ($len == 11))) {
    //Uppsala in Uppsala län (018) : 13 digit
    $num = substr($phone, 3, 2) . ' - ' . substr($phone, 5, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Uppsala', 'region' => 'Uppsala län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[5] === '+4619') && ($len == 11))) {
    //Örebro-Kumla in Örebro län (019) : 10 digit
@@ -117,7 +117,7 @@ if(($found['number'] == '') && (($substr[5] === '+4619') && ($len == 11))) {
    //Örebro-Kumla in Örebro län (019) : 13 digit
    $num = substr($phone, 3, 2) . ' - ' . substr($phone, 5, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Örebro-Kumla', 'region' => 'Örebro län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[5] === '+4621') && ($len == 11))) {
    //Västerås in Västmanlands län (021) : 10 digit
@@ -135,7 +135,7 @@ if(($found['number'] == '') && (($substr[5] === '+4621') && ($len == 11))) {
    //Västerås in Västmanlands län (021) : 13 digit
    $num = substr($phone, 3, 2) . ' - ' . substr($phone, 5, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Västerås', 'region' => 'Västmanlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[5] === '+4623') && ($len == 11))) {
    //Falun in Dalarnas län (023) : 10 digit
@@ -153,7 +153,7 @@ if(($found['number'] == '') && (($substr[5] === '+4623') && ($len == 11))) {
    //Falun in Dalarnas län (023) : 13 digit
    $num = substr($phone, 3, 2) . ' - ' . substr($phone, 5, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Falun', 'region' => 'Dalarnas län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[5] === '+4626') && ($len == 11))) {
    //Gävle-Sandviken in Gävleborgs län (026) : 10 digit
@@ -171,7 +171,7 @@ if(($found['number'] == '') && (($substr[5] === '+4626') && ($len == 11))) {
    //Gävle-Sandviken in Gävleborgs län (026) : 13 digit
    $num = substr($phone, 3, 2) . ' - ' . substr($phone, 5, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Gävle-Sandviken', 'region' => 'Gävleborgs län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[5] === '+4631') && ($len == 11))) {
    //Göteborg in Västra Götalands län (031) : 10 digit
@@ -189,7 +189,7 @@ if(($found['number'] == '') && (($substr[5] === '+4631') && ($len == 11))) {
    //Göteborg in Västra Götalands län (031) : 13 digit
    $num = substr($phone, 3, 2) . ' - ' . substr($phone, 5, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Göteborg', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[5] === '+4633') && ($len == 11))) {
    //Borås in Västra Götalands län (033) : 10 digit
@@ -207,7 +207,7 @@ if(($found['number'] == '') && (($substr[5] === '+4633') && ($len == 11))) {
    //Borås in Västra Götalands län (033) : 13 digit
    $num = substr($phone, 3, 2) . ' - ' . substr($phone, 5, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Borås', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[5] === '+4635') && ($len == 11))) {
    //Halmstad in Hallands län (035) : 10 digit
@@ -225,7 +225,7 @@ if(($found['number'] == '') && (($substr[5] === '+4635') && ($len == 11))) {
    //Halmstad in Hallands län (035) : 13 digit
    $num = substr($phone, 3, 2) . ' - ' . substr($phone, 5, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Halmstad', 'region' => 'Hallands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[5] === '+4636') && ($len == 11))) {
    //Jönköping-Huskvarna in Jönköpings län (036) : 10 digit
@@ -243,7 +243,7 @@ if(($found['number'] == '') && (($substr[5] === '+4636') && ($len == 11))) {
    //Jönköping-Huskvarna in Jönköpings län (036) : 13 digit
    $num = substr($phone, 3, 2) . ' - ' . substr($phone, 5, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Jönköping-Huskvarna', 'region' => 'Jönköpings län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[5] === '+4640') && ($len == 11))) {
    //Malmö in Skåne län (040) : 10 digit
@@ -261,7 +261,7 @@ if(($found['number'] == '') && (($substr[5] === '+4640') && ($len == 11))) {
    //Malmö in Skåne län (040) : 13 digit
    $num = substr($phone, 3, 2) . ' - ' . substr($phone, 5, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Malmö', 'region' => 'Skåne län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[5] === '+4642') && ($len == 11))) {
    //Helsingborg-Höganäs in Skåne län (042) : 10 digit
@@ -279,7 +279,7 @@ if(($found['number'] == '') && (($substr[5] === '+4642') && ($len == 11))) {
    //Helsingborg-Höganäs in Skåne län (042) : 13 digit
    $num = substr($phone, 3, 2) . ' - ' . substr($phone, 5, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Helsingborg-Höganäs', 'region' => 'Skåne län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[5] === '+4644') && ($len == 11))) {
    //Kristianstad in Skåne län (044) : 10 digit
@@ -297,7 +297,7 @@ if(($found['number'] == '') && (($substr[5] === '+4644') && ($len == 11))) {
    //Kristianstad in Skåne län (044) : 13 digit
    $num = substr($phone, 3, 2) . ' - ' . substr($phone, 5, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Kristianstad', 'region' => 'Skåne län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[5] === '+4646') && ($len == 11))) {
    //Lund in Skåne län (046) : 10 digit
@@ -315,7 +315,7 @@ if(($found['number'] == '') && (($substr[5] === '+4646') && ($len == 11))) {
    //Lund in Skåne län (046) : 13 digit
    $num = substr($phone, 3, 2) . ' - ' . substr($phone, 5, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Lund', 'region' => 'Skåne län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[5] === '+4654') && ($len == 11))) {
    //Karlstad in Värmlands län (054) : 10 digit
@@ -333,7 +333,7 @@ if(($found['number'] == '') && (($substr[5] === '+4654') && ($len == 11))) {
    //Karlstad in Värmlands län (054) : 13 digit
    $num = substr($phone, 3, 2) . ' - ' . substr($phone, 5, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Karlstad', 'region' => 'Värmlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[5] === '+4660') && ($len == 11))) {
    //Sundsvall-Timrå in Västernorrlands län (060) : 10 digit
@@ -351,7 +351,7 @@ if(($found['number'] == '') && (($substr[5] === '+4660') && ($len == 11))) {
    //Sundsvall-Timrå in Västernorrlands län (060) : 13 digit
    $num = substr($phone, 3, 2) . ' - ' . substr($phone, 5, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Sundsvall-Timrå', 'region' => 'Västernorrlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[5] === '+4663') && ($len == 11))) {
    //Östersund in Jämtlands län (063) : 10 digit
@@ -369,7 +369,7 @@ if(($found['number'] == '') && (($substr[5] === '+4663') && ($len == 11))) {
    //Östersund in Jämtlands län (063) : 13 digit
    $num = substr($phone, 3, 2) . ' - ' . substr($phone, 5, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Östersund', 'region' => 'Jämtlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[5] === '+4690') && ($len == 11))) {
    //Umeå in Västerbottens län (090) : 10 digit
@@ -387,7 +387,7 @@ if(($found['number'] == '') && (($substr[5] === '+4690') && ($len == 11))) {
    //Umeå in Västerbottens län (090) : 13 digit
    $num = substr($phone, 3, 2) . ' - ' . substr($phone, 5, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Umeå', 'region' => 'Västerbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46120') && ($len == 12))) {
    //Åtvidaberg in Östergötlands län (0120) : 10 digit
@@ -405,7 +405,7 @@ if(($found['number'] == '') && (($substr[6] === '+46120') && ($len == 12))) {
    //Åtvidaberg in Östergötlands län (0120) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Åtvidaberg', 'region' => 'Östergötlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46121') && ($len == 12))) {
    //Söderköping in Östergötlands län (0121) : 10 digit
@@ -423,7 +423,7 @@ if(($found['number'] == '') && (($substr[6] === '+46121') && ($len == 12))) {
    //Söderköping in Östergötlands län (0121) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Söderköping', 'region' => 'Östergötlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46122') && ($len == 12))) {
    //Finspång in Östergötlands län (0122) : 10 digit
@@ -441,7 +441,7 @@ if(($found['number'] == '') && (($substr[6] === '+46122') && ($len == 12))) {
    //Finspång in Östergötlands län (0122) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Finspång', 'region' => 'Östergötlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46123') && ($len == 12))) {
    //Valdemarsvik in Östergötlands län (0123) : 10 digit
@@ -459,7 +459,7 @@ if(($found['number'] == '') && (($substr[6] === '+46123') && ($len == 12))) {
    //Valdemarsvik in Östergötlands län (0123) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Valdemarsvik', 'region' => 'Östergötlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46125') && ($len == 12))) {
    //Vikbolandet in Östergötlands län (0125) : 10 digit
@@ -477,7 +477,7 @@ if(($found['number'] == '') && (($substr[6] === '+46125') && ($len == 12))) {
    //Vikbolandet in Östergötlands län (0125) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Vikbolandet', 'region' => 'Östergötlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46140') && ($len == 12))) {
    //Tranås in Jönköpings län (0140) : 10 digit
@@ -495,7 +495,7 @@ if(($found['number'] == '') && (($substr[6] === '+46140') && ($len == 12))) {
    //Tranås in Jönköpings län (0140) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Tranås', 'region' => 'Jönköpings län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46141') && ($len == 12))) {
    //Motala in Östergötlands län (0141) : 10 digit
@@ -513,7 +513,7 @@ if(($found['number'] == '') && (($substr[6] === '+46141') && ($len == 12))) {
    //Motala in Östergötlands län (0141) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Motala', 'region' => 'Östergötlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46142') && ($len == 12))) {
    //Mjölby-Skänninge-Boxholm in Östergötlands län (0142) : 10 digit
@@ -531,7 +531,7 @@ if(($found['number'] == '') && (($substr[6] === '+46142') && ($len == 12))) {
    //Mjölby-Skänninge-Boxholm in Östergötlands län (0142) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Mjölby-Skänninge-Boxholm', 'region' => 'Östergötlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46143') && ($len == 12))) {
    //Vadstena in Östergötlands län (0143) : 10 digit
@@ -549,7 +549,7 @@ if(($found['number'] == '') && (($substr[6] === '+46143') && ($len == 12))) {
    //Vadstena in Östergötlands län (0143) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Vadstena', 'region' => 'Östergötlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46144') && ($len == 12))) {
    //Ödeshög in Östergötlands län (0144) : 10 digit
@@ -567,7 +567,7 @@ if(($found['number'] == '') && (($substr[6] === '+46144') && ($len == 12))) {
    //Ödeshög in Östergötlands län (0144) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Ödeshög', 'region' => 'Östergötlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46150') && ($len == 12))) {
    //Katrineholm in Södermanlands län (0150) : 10 digit
@@ -585,7 +585,7 @@ if(($found['number'] == '') && (($substr[6] === '+46150') && ($len == 12))) {
    //Katrineholm in Södermanlands län (0150) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Katrineholm', 'region' => 'Södermanlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46151') && ($len == 12))) {
    //Vingåker in Södermanlands län (0151) : 10 digit
@@ -603,7 +603,7 @@ if(($found['number'] == '') && (($substr[6] === '+46151') && ($len == 12))) {
    //Vingåker in Södermanlands län (0151) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Vingåker', 'region' => 'Södermanlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46152') && ($len == 12))) {
    //Strängnäs in Södermanlands län (0152) : 10 digit
@@ -621,7 +621,7 @@ if(($found['number'] == '') && (($substr[6] === '+46152') && ($len == 12))) {
    //Strängnäs in Södermanlands län (0152) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Strängnäs', 'region' => 'Södermanlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46155') && ($len == 12))) {
    //Nyköping-Oxelösund in Södermanlands län (0155) : 10 digit
@@ -639,7 +639,7 @@ if(($found['number'] == '') && (($substr[6] === '+46155') && ($len == 12))) {
    //Nyköping-Oxelösund in Södermanlands län (0155) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Nyköping-Oxelösund', 'region' => 'Södermanlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46156') && ($len == 12))) {
    //Trosa-Vagnhärad in Södermanlands län (0156) : 10 digit
@@ -657,7 +657,7 @@ if(($found['number'] == '') && (($substr[6] === '+46156') && ($len == 12))) {
    //Trosa-Vagnhärad in Södermanlands län (0156) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Trosa-Vagnhärad', 'region' => 'Södermanlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46157') && ($len == 12))) {
    //Flen-Malmköping in Södermanlands län (0157) : 10 digit
@@ -675,7 +675,7 @@ if(($found['number'] == '') && (($substr[6] === '+46157') && ($len == 12))) {
    //Flen-Malmköping in Södermanlands län (0157) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Flen-Malmköping', 'region' => 'Södermanlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46158') && ($len == 12))) {
    //Gnesta in Södermanlands län (0158) : 10 digit
@@ -693,7 +693,7 @@ if(($found['number'] == '') && (($substr[6] === '+46158') && ($len == 12))) {
    //Gnesta in Södermanlands län (0158) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Gnesta', 'region' => 'Södermanlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46159') && ($len == 12))) {
    //Mariefred in Södermanlands län (0159) : 10 digit
@@ -711,7 +711,7 @@ if(($found['number'] == '') && (($substr[6] === '+46159') && ($len == 12))) {
    //Mariefred in Södermanlands län (0159) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Mariefred', 'region' => 'Södermanlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46171') && ($len == 12))) {
    //Enköping in Uppsala län (0171) : 10 digit
@@ -729,7 +729,7 @@ if(($found['number'] == '') && (($substr[6] === '+46171') && ($len == 12))) {
    //Enköping in Uppsala län (0171) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Enköping', 'region' => 'Uppsala län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46173') && ($len == 12))) {
    //Öregrund-Östhammar in Uppsala län (0173) : 10 digit
@@ -747,7 +747,7 @@ if(($found['number'] == '') && (($substr[6] === '+46173') && ($len == 12))) {
    //Öregrund-Östhammar in Uppsala län (0173) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Öregrund-Östhammar', 'region' => 'Uppsala län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46174') && ($len == 12))) {
    //Alunda in Uppsala län (0174) : 10 digit
@@ -765,7 +765,7 @@ if(($found['number'] == '') && (($substr[6] === '+46174') && ($len == 12))) {
    //Alunda in Uppsala län (0174) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Alunda', 'region' => 'Uppsala län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46175') && ($len == 12))) {
    //Hallstavik-Rimbo in Stockholms län (0175) : 10 digit
@@ -783,7 +783,7 @@ if(($found['number'] == '') && (($substr[6] === '+46175') && ($len == 12))) {
    //Hallstavik-Rimbo in Stockholms län (0175) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Hallstavik-Rimbo', 'region' => 'Stockholms län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46176') && ($len == 12))) {
    //Norrtälje in Stockholms län (0176) : 10 digit
@@ -801,7 +801,7 @@ if(($found['number'] == '') && (($substr[6] === '+46176') && ($len == 12))) {
    //Norrtälje in Stockholms län (0176) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Norrtälje', 'region' => 'Stockholms län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46220') && ($len == 12))) {
    //Hallstahammar-Surahammar in Västmanlands län (0220) : 10 digit
@@ -819,7 +819,7 @@ if(($found['number'] == '') && (($substr[6] === '+46220') && ($len == 12))) {
    //Hallstahammar-Surahammar in Västmanlands län (0220) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Hallstahammar-Surahammar', 'region' => 'Västmanlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46221') && ($len == 12))) {
    //Köping in Västmanlands län (0221) : 10 digit
@@ -837,7 +837,7 @@ if(($found['number'] == '') && (($substr[6] === '+46221') && ($len == 12))) {
    //Köping in Västmanlands län (0221) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Köping', 'region' => 'Västmanlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46222') && ($len == 12))) {
    //Skinnskatteberg in Västmanlands län (0222) : 10 digit
@@ -855,7 +855,7 @@ if(($found['number'] == '') && (($substr[6] === '+46222') && ($len == 12))) {
    //Skinnskatteberg in Västmanlands län (0222) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Skinnskatteberg', 'region' => 'Västmanlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46223') && ($len == 12))) {
    //Fagersta-Norberg in Västmanlands län (0223) : 10 digit
@@ -873,7 +873,7 @@ if(($found['number'] == '') && (($substr[6] === '+46223') && ($len == 12))) {
    //Fagersta-Norberg in Västmanlands län (0223) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Fagersta-Norberg', 'region' => 'Västmanlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46224') && ($len == 12))) {
    //Sala-Heby in Västmanlands län (0224) : 10 digit
@@ -891,7 +891,7 @@ if(($found['number'] == '') && (($substr[6] === '+46224') && ($len == 12))) {
    //Sala-Heby in Västmanlands län (0224) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Sala-Heby', 'region' => 'Västmanlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46225') && ($len == 12))) {
    //Hedemora-Säter in Dalarnas län (0225) : 10 digit
@@ -909,7 +909,7 @@ if(($found['number'] == '') && (($substr[6] === '+46225') && ($len == 12))) {
    //Hedemora-Säter in Dalarnas län (0225) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Hedemora-Säter', 'region' => 'Dalarnas län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46226') && ($len == 12))) {
    //Avesta-Krylbo in Dalarnas län (0226) : 10 digit
@@ -927,7 +927,7 @@ if(($found['number'] == '') && (($substr[6] === '+46226') && ($len == 12))) {
    //Avesta-Krylbo in Dalarnas län (0226) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Avesta-Krylbo', 'region' => 'Dalarnas län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46227') && ($len == 12))) {
    //Kungsör in Västmanlands län (0227) : 10 digit
@@ -945,7 +945,7 @@ if(($found['number'] == '') && (($substr[6] === '+46227') && ($len == 12))) {
    //Kungsör in Västmanlands län (0227) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Kungsör', 'region' => 'Västmanlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46240') && ($len == 12))) {
    //Ludvika-Smedjebacken in Dalarnas län (0240) : 10 digit
@@ -963,7 +963,7 @@ if(($found['number'] == '') && (($substr[6] === '+46240') && ($len == 12))) {
    //Ludvika-Smedjebacken in Dalarnas län (0240) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Ludvika-Smedjebacken', 'region' => 'Dalarnas län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46241') && ($len == 12))) {
    //Gagnef-Floda in Dalarnas län (0241) : 10 digit
@@ -981,7 +981,7 @@ if(($found['number'] == '') && (($substr[6] === '+46241') && ($len == 12))) {
    //Gagnef-Floda in Dalarnas län (0241) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Gagnef-Floda', 'region' => 'Dalarnas län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46243') && ($len == 12))) {
    //Borlänge in Dalarnas län (0243) : 10 digit
@@ -999,7 +999,7 @@ if(($found['number'] == '') && (($substr[6] === '+46243') && ($len == 12))) {
    //Borlänge in Dalarnas län (0243) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Borlänge', 'region' => 'Dalarnas län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46246') && ($len == 12))) {
    //Svärdsjö-Enviken in Dalarnas län (0246) : 10 digit
@@ -1017,7 +1017,7 @@ if(($found['number'] == '') && (($substr[6] === '+46246') && ($len == 12))) {
    //Svärdsjö-Enviken in Dalarnas län (0246) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Svärdsjö-Enviken', 'region' => 'Dalarnas län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46247') && ($len == 12))) {
    //Leksand-Insjön in Dalarnas län (0247) : 10 digit
@@ -1035,7 +1035,7 @@ if(($found['number'] == '') && (($substr[6] === '+46247') && ($len == 12))) {
    //Leksand-Insjön in Dalarnas län (0247) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Leksand-Insjön', 'region' => 'Dalarnas län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46248') && ($len == 12))) {
    //Rättvik in Dalarnas län (0248) : 10 digit
@@ -1053,7 +1053,7 @@ if(($found['number'] == '') && (($substr[6] === '+46248') && ($len == 12))) {
    //Rättvik in Dalarnas län (0248) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Rättvik', 'region' => 'Dalarnas län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46250') && ($len == 12))) {
    //Mora-Orsa in Dalarnas län (0250) : 10 digit
@@ -1071,7 +1071,7 @@ if(($found['number'] == '') && (($substr[6] === '+46250') && ($len == 12))) {
    //Mora-Orsa in Dalarnas län (0250) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Mora-Orsa', 'region' => 'Dalarnas län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46251') && ($len == 12))) {
    //Älvdalen in Dalarnas län (0251) : 10 digit
@@ -1089,7 +1089,7 @@ if(($found['number'] == '') && (($substr[6] === '+46251') && ($len == 12))) {
    //Älvdalen in Dalarnas län (0251) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Älvdalen', 'region' => 'Dalarnas län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46253') && ($len == 12))) {
    //Idre-Särna in Dalarnas län (0253) : 10 digit
@@ -1107,7 +1107,7 @@ if(($found['number'] == '') && (($substr[6] === '+46253') && ($len == 12))) {
    //Idre-Särna in Dalarnas län (0253) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Idre-Särna', 'region' => 'Dalarnas län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46258') && ($len == 12))) {
    //Furudal in Dalarnas län (0258) : 10 digit
@@ -1125,7 +1125,7 @@ if(($found['number'] == '') && (($substr[6] === '+46258') && ($len == 12))) {
    //Furudal in Dalarnas län (0258) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Furudal', 'region' => 'Dalarnas län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46270') && ($len == 12))) {
    //Söderhamn in Gävleborgs län (0270) : 10 digit
@@ -1143,7 +1143,7 @@ if(($found['number'] == '') && (($substr[6] === '+46270') && ($len == 12))) {
    //Söderhamn in Gävleborgs län (0270) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Söderhamn', 'region' => 'Gävleborgs län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46271') && ($len == 12))) {
    //Alfta-Edsbyn in Gävleborgs län (0271) : 10 digit
@@ -1161,7 +1161,7 @@ if(($found['number'] == '') && (($substr[6] === '+46271') && ($len == 12))) {
    //Alfta-Edsbyn in Gävleborgs län (0271) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Alfta-Edsbyn', 'region' => 'Gävleborgs län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46278') && ($len == 12))) {
    //Bollnäs in Gävleborgs län (0278) : 10 digit
@@ -1179,7 +1179,7 @@ if(($found['number'] == '') && (($substr[6] === '+46278') && ($len == 12))) {
    //Bollnäs in Gävleborgs län (0278) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Bollnäs', 'region' => 'Gävleborgs län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46280') && ($len == 12))) {
    //Malung in Dalarnas län (0280) : 10 digit
@@ -1197,7 +1197,7 @@ if(($found['number'] == '') && (($substr[6] === '+46280') && ($len == 12))) {
    //Malung in Dalarnas län (0280) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Malung', 'region' => 'Dalarnas län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46281') && ($len == 12))) {
    //Vansbro in Dalarnas län (0281) : 10 digit
@@ -1215,7 +1215,7 @@ if(($found['number'] == '') && (($substr[6] === '+46281') && ($len == 12))) {
    //Vansbro in Dalarnas län (0281) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Vansbro', 'region' => 'Dalarnas län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46290') && ($len == 12))) {
    //Hofors-Storvik in Gävleborgs län (0290) : 10 digit
@@ -1233,7 +1233,7 @@ if(($found['number'] == '') && (($substr[6] === '+46290') && ($len == 12))) {
    //Hofors-Storvik in Gävleborgs län (0290) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Hofors-Storvik', 'region' => 'Gävleborgs län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46291') && ($len == 12))) {
    //Hedesunda-Österfärnebo in Gävleborgs län (0291) : 10 digit
@@ -1251,7 +1251,7 @@ if(($found['number'] == '') && (($substr[6] === '+46291') && ($len == 12))) {
    //Hedesunda-Österfärnebo in Gävleborgs län (0291) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Hedesunda-Österfärnebo', 'region' => 'Gävleborgs län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46292') && ($len == 12))) {
    //Tärnsjö-Östervåla in Uppsala län (0292) : 10 digit
@@ -1269,7 +1269,7 @@ if(($found['number'] == '') && (($substr[6] === '+46292') && ($len == 12))) {
    //Tärnsjö-Östervåla in Uppsala län (0292) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Tärnsjö-Östervåla', 'region' => 'Uppsala län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46293') && ($len == 12))) {
    //Tierp-Söderfors in Uppsala län (0293) : 10 digit
@@ -1287,7 +1287,7 @@ if(($found['number'] == '') && (($substr[6] === '+46293') && ($len == 12))) {
    //Tierp-Söderfors in Uppsala län (0293) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Tierp-Söderfors', 'region' => 'Uppsala län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46294') && ($len == 12))) {
    //Karlsholmsbruk-Skärplinge in Uppsala län (0294) : 10 digit
@@ -1305,7 +1305,7 @@ if(($found['number'] == '') && (($substr[6] === '+46294') && ($len == 12))) {
    //Karlsholmsbruk-Skärplinge in Uppsala län (0294) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Karlsholmsbruk-Skärplinge', 'region' => 'Uppsala län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46295') && ($len == 12))) {
    //Örbyhus-Dannemora in Uppsala län (0295) : 10 digit
@@ -1323,7 +1323,7 @@ if(($found['number'] == '') && (($substr[6] === '+46295') && ($len == 12))) {
    //Örbyhus-Dannemora in Uppsala län (0295) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Örbyhus-Dannemora', 'region' => 'Uppsala län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46297') && ($len == 12))) {
    //Ockelbo-Hamrånge in Gävleborgs län (0297) : 10 digit
@@ -1341,7 +1341,7 @@ if(($found['number'] == '') && (($substr[6] === '+46297') && ($len == 12))) {
    //Ockelbo-Hamrånge in Gävleborgs län (0297) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Ockelbo-Hamrånge', 'region' => 'Gävleborgs län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46300') && ($len == 12))) {
    //Kungsbacka in Hallands län (0300) : 10 digit
@@ -1359,7 +1359,7 @@ if(($found['number'] == '') && (($substr[6] === '+46300') && ($len == 12))) {
    //Kungsbacka in Hallands län (0300) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Kungsbacka', 'region' => 'Hallands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46301') && ($len == 12))) {
    //Hindås in Västra Götalands län (0301) : 10 digit
@@ -1377,7 +1377,7 @@ if(($found['number'] == '') && (($substr[6] === '+46301') && ($len == 12))) {
    //Hindås in Västra Götalands län (0301) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Hindås', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46302') && ($len == 12))) {
    //Lerum in Västra Götalands län (0302) : 10 digit
@@ -1395,7 +1395,7 @@ if(($found['number'] == '') && (($substr[6] === '+46302') && ($len == 12))) {
    //Lerum in Västra Götalands län (0302) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Lerum', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46303') && ($len == 12))) {
    //Kungälv in Västra Götalands län (0303) : 10 digit
@@ -1413,7 +1413,7 @@ if(($found['number'] == '') && (($substr[6] === '+46303') && ($len == 12))) {
    //Kungälv in Västra Götalands län (0303) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Kungälv', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46304') && ($len == 12))) {
    //Orust-Tjörn in Västra Götalands län (0304) : 10 digit
@@ -1431,7 +1431,7 @@ if(($found['number'] == '') && (($substr[6] === '+46304') && ($len == 12))) {
    //Orust-Tjörn in Västra Götalands län (0304) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Orust-Tjörn', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46320') && ($len == 12))) {
    //Kinna in Västra Götalands län (0320) : 10 digit
@@ -1449,7 +1449,7 @@ if(($found['number'] == '') && (($substr[6] === '+46320') && ($len == 12))) {
    //Kinna in Västra Götalands län (0320) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Kinna', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46321') && ($len == 12))) {
    //Ulricehamn in Västra Götalands län (0321) : 10 digit
@@ -1467,7 +1467,7 @@ if(($found['number'] == '') && (($substr[6] === '+46321') && ($len == 12))) {
    //Ulricehamn in Västra Götalands län (0321) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Ulricehamn', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46322') && ($len == 12))) {
    //Alingsås-Vårgårda in Västra Götalands län (0322) : 10 digit
@@ -1485,7 +1485,7 @@ if(($found['number'] == '') && (($substr[6] === '+46322') && ($len == 12))) {
    //Alingsås-Vårgårda in Västra Götalands län (0322) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Alingsås-Vårgårda', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46325') && ($len == 12))) {
    //Svenljunga-Tranemo in Västra Götalands län (0325) : 10 digit
@@ -1503,7 +1503,7 @@ if(($found['number'] == '') && (($substr[6] === '+46325') && ($len == 12))) {
    //Svenljunga-Tranemo in Västra Götalands län (0325) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Svenljunga-Tranemo', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46340') && ($len == 12))) {
    //Varberg in Hallands län (0340) : 10 digit
@@ -1521,7 +1521,7 @@ if(($found['number'] == '') && (($substr[6] === '+46340') && ($len == 12))) {
    //Varberg in Hallands län (0340) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Varberg', 'region' => 'Hallands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46345') && ($len == 12))) {
    //Hyltebruk-Torup in Hallands län (0345) : 10 digit
@@ -1539,7 +1539,7 @@ if(($found['number'] == '') && (($substr[6] === '+46345') && ($len == 12))) {
    //Hyltebruk-Torup in Hallands län (0345) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Hyltebruk-Torup', 'region' => 'Hallands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46346') && ($len == 12))) {
    //Falkenberg in Hallands län (0346) : 10 digit
@@ -1557,7 +1557,7 @@ if(($found['number'] == '') && (($substr[6] === '+46346') && ($len == 12))) {
    //Falkenberg in Hallands län (0346) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Falkenberg', 'region' => 'Hallands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46346') && ($len == 12))) {
    //Glommen in Hallands län (0346) : 10 digit
@@ -1575,7 +1575,7 @@ if(($found['number'] == '') && (($substr[6] === '+46346') && ($len == 12))) {
    //Glommen in Hallands län (0346) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Glommen', 'region' => 'Hallands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46370') && ($len == 12))) {
    //Värnamo in Jönköpings län (0370) : 10 digit
@@ -1593,7 +1593,7 @@ if(($found['number'] == '') && (($substr[6] === '+46370') && ($len == 12))) {
    //Värnamo in Jönköpings län (0370) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Värnamo', 'region' => 'Jönköpings län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46371') && ($len == 12))) {
    //Gislaved-Anderstorp in Jönköpings län (0371) : 10 digit
@@ -1611,7 +1611,7 @@ if(($found['number'] == '') && (($substr[6] === '+46371') && ($len == 12))) {
    //Gislaved-Anderstorp in Jönköpings län (0371) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Gislaved-Anderstorp', 'region' => 'Jönköpings län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46372') && ($len == 12))) {
    //Ljungby in Kronobergs län (0372) : 10 digit
@@ -1629,7 +1629,7 @@ if(($found['number'] == '') && (($substr[6] === '+46372') && ($len == 12))) {
    //Ljungby in Kronobergs län (0372) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Ljungby', 'region' => 'Kronobergs län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46380') && ($len == 12))) {
    //Nässjö in Jönköpings län (0380) : 10 digit
@@ -1647,7 +1647,7 @@ if(($found['number'] == '') && (($substr[6] === '+46380') && ($len == 12))) {
    //Nässjö in Jönköpings län (0380) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Nässjö', 'region' => 'Jönköpings län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46381') && ($len == 12))) {
    //Eksjö in Jönköpings län (0381) : 10 digit
@@ -1665,7 +1665,7 @@ if(($found['number'] == '') && (($substr[6] === '+46381') && ($len == 12))) {
    //Eksjö in Jönköpings län (0381) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Eksjö', 'region' => 'Jönköpings län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46382') && ($len == 12))) {
    //Sävsjö in Jönköpings län (0382) : 10 digit
@@ -1683,7 +1683,7 @@ if(($found['number'] == '') && (($substr[6] === '+46382') && ($len == 12))) {
    //Sävsjö in Jönköpings län (0382) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Sävsjö', 'region' => 'Jönköpings län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46383') && ($len == 12))) {
    //Vetlanda in Jönköpings län (0383) : 10 digit
@@ -1701,7 +1701,7 @@ if(($found['number'] == '') && (($substr[6] === '+46383') && ($len == 12))) {
    //Vetlanda in Jönköpings län (0383) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Vetlanda', 'region' => 'Jönköpings län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46390') && ($len == 12))) {
    //Gränna in Jönköpings län (0390) : 10 digit
@@ -1719,7 +1719,7 @@ if(($found['number'] == '') && (($substr[6] === '+46390') && ($len == 12))) {
    //Gränna in Jönköpings län (0390) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Gränna', 'region' => 'Jönköpings län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46392') && ($len == 12))) {
    //Mullsjö in Jönköpings län (0392) : 10 digit
@@ -1737,7 +1737,7 @@ if(($found['number'] == '') && (($substr[6] === '+46392') && ($len == 12))) {
    //Mullsjö in Jönköpings län (0392) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Mullsjö', 'region' => 'Jönköpings län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46393') && ($len == 12))) {
    //Vaggeryd in Jönköpings län (0393) : 10 digit
@@ -1755,7 +1755,7 @@ if(($found['number'] == '') && (($substr[6] === '+46393') && ($len == 12))) {
    //Vaggeryd in Jönköpings län (0393) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Vaggeryd', 'region' => 'Jönköpings län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46410') && ($len == 12))) {
    //Trelleborg in Skåne län (0410) : 10 digit
@@ -1773,7 +1773,7 @@ if(($found['number'] == '') && (($substr[6] === '+46410') && ($len == 12))) {
    //Trelleborg in Skåne län (0410) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Trelleborg', 'region' => 'Skåne län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46411') && ($len == 12))) {
    //Ystad in Skåne län (0411) : 10 digit
@@ -1791,7 +1791,7 @@ if(($found['number'] == '') && (($substr[6] === '+46411') && ($len == 12))) {
    //Ystad in Skåne län (0411) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Ystad', 'region' => 'Skåne län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46413') && ($len == 12))) {
    //Eslöv-Höör in Skåne län (0413) : 10 digit
@@ -1809,7 +1809,7 @@ if(($found['number'] == '') && (($substr[6] === '+46413') && ($len == 12))) {
    //Eslöv-Höör in Skåne län (0413) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Eslöv-Höör', 'region' => 'Skåne län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46414') && ($len == 12))) {
    //Simrishamn in Skåne län (0414) : 10 digit
@@ -1827,7 +1827,7 @@ if(($found['number'] == '') && (($substr[6] === '+46414') && ($len == 12))) {
    //Simrishamn in Skåne län (0414) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Simrishamn', 'region' => 'Skåne län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46415') && ($len == 12))) {
    //Hörby in Skåne län (0415) : 10 digit
@@ -1845,7 +1845,7 @@ if(($found['number'] == '') && (($substr[6] === '+46415') && ($len == 12))) {
    //Hörby in Skåne län (0415) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Hörby', 'region' => 'Skåne län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46416') && ($len == 12))) {
    //Sjöbo in Skåne län (0416) : 10 digit
@@ -1863,7 +1863,7 @@ if(($found['number'] == '') && (($substr[6] === '+46416') && ($len == 12))) {
    //Sjöbo in Skåne län (0416) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Sjöbo', 'region' => 'Skåne län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46417') && ($len == 12))) {
    //Tomelilla in Skåne län (0417) : 10 digit
@@ -1881,7 +1881,7 @@ if(($found['number'] == '') && (($substr[6] === '+46417') && ($len == 12))) {
    //Tomelilla in Skåne län (0417) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Tomelilla', 'region' => 'Skåne län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46418') && ($len == 12))) {
    //Landskrona-Svalöv in Skåne län (0418) : 10 digit
@@ -1899,7 +1899,7 @@ if(($found['number'] == '') && (($substr[6] === '+46418') && ($len == 12))) {
    //Landskrona-Svalöv in Skåne län (0418) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Landskrona-Svalöv', 'region' => 'Skåne län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46430') && ($len == 12))) {
    //Laholm in Hallands län (0430) : 10 digit
@@ -1917,7 +1917,7 @@ if(($found['number'] == '') && (($substr[6] === '+46430') && ($len == 12))) {
    //Laholm in Hallands län (0430) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Laholm', 'region' => 'Hallands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46431') && ($len == 12))) {
    //Ängelholm-Båstad in Skåne län (0431) : 10 digit
@@ -1935,7 +1935,7 @@ if(($found['number'] == '') && (($substr[6] === '+46431') && ($len == 12))) {
    //Ängelholm-Båstad in Skåne län (0431) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Ängelholm-Båstad', 'region' => 'Skåne län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46433') && ($len == 12))) {
    //Markaryd-Strömnäsbruk in Kronobergs län (0433) : 10 digit
@@ -1953,7 +1953,7 @@ if(($found['number'] == '') && (($substr[6] === '+46433') && ($len == 12))) {
    //Markaryd-Strömnäsbruk in Kronobergs län (0433) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Markaryd-Strömnäsbruk', 'region' => 'Kronobergs län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46435') && ($len == 12))) {
    //Klippan-Perstorp in Skåne län (0435) : 10 digit
@@ -1971,7 +1971,7 @@ if(($found['number'] == '') && (($substr[6] === '+46435') && ($len == 12))) {
    //Klippan-Perstorp in Skåne län (0435) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Klippan-Perstorp', 'region' => 'Skåne län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46451') && ($len == 12))) {
    //Hässleholm in Skåne län (0451) : 10 digit
@@ -1989,7 +1989,7 @@ if(($found['number'] == '') && (($substr[6] === '+46451') && ($len == 12))) {
    //Hässleholm in Skåne län (0451) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Hässleholm', 'region' => 'Skåne län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46454') && ($len == 12))) {
    //Karlshamn-Olofström in Blekinge län (0454) : 10 digit
@@ -2007,7 +2007,7 @@ if(($found['number'] == '') && (($substr[6] === '+46454') && ($len == 12))) {
    //Karlshamn-Olofström in Blekinge län (0454) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Karlshamn-Olofström', 'region' => 'Blekinge län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46455') && ($len == 12))) {
    //Karlskrona in Blekinge län (0455) : 10 digit
@@ -2025,7 +2025,7 @@ if(($found['number'] == '') && (($substr[6] === '+46455') && ($len == 12))) {
    //Karlskrona in Blekinge län (0455) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Karlskrona', 'region' => 'Blekinge län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46456') && ($len == 12))) {
    //Sölvesborg-Bromölla in Blekinge län (0456) : 10 digit
@@ -2043,7 +2043,7 @@ if(($found['number'] == '') && (($substr[6] === '+46456') && ($len == 12))) {
    //Sölvesborg-Bromölla in Blekinge län (0456) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Sölvesborg-Bromölla', 'region' => 'Blekinge län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46457') && ($len == 12))) {
    //Ronneby in Blekinge län (0457) : 10 digit
@@ -2061,7 +2061,7 @@ if(($found['number'] == '') && (($substr[6] === '+46457') && ($len == 12))) {
    //Ronneby in Blekinge län (0457) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Ronneby', 'region' => 'Blekinge län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46459') && ($len == 12))) {
    //Ryd in Kronobergs län (0459) : 10 digit
@@ -2079,7 +2079,7 @@ if(($found['number'] == '') && (($substr[6] === '+46459') && ($len == 12))) {
    //Ryd in Kronobergs län (0459) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Ryd', 'region' => 'Kronobergs län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46470') && ($len == 12))) {
    //Växjö in Kronobergs län (0470) : 10 digit
@@ -2097,7 +2097,7 @@ if(($found['number'] == '') && (($substr[6] === '+46470') && ($len == 12))) {
    //Växjö in Kronobergs län (0470) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Växjö', 'region' => 'Kronobergs län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46471') && ($len == 12))) {
    //Emmaboda in Kalmar län (0471) : 10 digit
@@ -2115,7 +2115,7 @@ if(($found['number'] == '') && (($substr[6] === '+46471') && ($len == 12))) {
    //Emmaboda in Kalmar län (0471) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Emmaboda', 'region' => 'Kalmar län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46472') && ($len == 12))) {
    //Alvesta-Rydaholm in Kronobergs län (0472) : 10 digit
@@ -2133,7 +2133,7 @@ if(($found['number'] == '') && (($substr[6] === '+46472') && ($len == 12))) {
    //Alvesta-Rydaholm in Kronobergs län (0472) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Alvesta-Rydaholm', 'region' => 'Kronobergs län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46474') && ($len == 12))) {
    //Åseda-Lenhovda in Kronobergs län (0474) : 10 digit
@@ -2151,7 +2151,7 @@ if(($found['number'] == '') && (($substr[6] === '+46474') && ($len == 12))) {
    //Åseda-Lenhovda in Kronobergs län (0474) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Åseda-Lenhovda', 'region' => 'Kronobergs län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46476') && ($len == 12))) {
    //Älmhult in Kronobergs län (0476) : 10 digit
@@ -2169,7 +2169,7 @@ if(($found['number'] == '') && (($substr[6] === '+46476') && ($len == 12))) {
    //Älmhult in Kronobergs län (0476) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Älmhult', 'region' => 'Kronobergs län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46477') && ($len == 12))) {
    //Tingsryd in Kronobergs län (0477) : 10 digit
@@ -2187,7 +2187,7 @@ if(($found['number'] == '') && (($substr[6] === '+46477') && ($len == 12))) {
    //Tingsryd in Kronobergs län (0477) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Tingsryd', 'region' => 'Kronobergs län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46478') && ($len == 12))) {
    //Lessebo in Kronobergs län (0478) : 10 digit
@@ -2205,7 +2205,7 @@ if(($found['number'] == '') && (($substr[6] === '+46478') && ($len == 12))) {
    //Lessebo in Kronobergs län (0478) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Lessebo', 'region' => 'Kronobergs län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46479') && ($len == 12))) {
    //Osby in Skåne län (0479) : 10 digit
@@ -2223,7 +2223,7 @@ if(($found['number'] == '') && (($substr[6] === '+46479') && ($len == 12))) {
    //Osby in Skåne län (0479) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Osby', 'region' => 'Skåne län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46480') && ($len == 12))) {
    //Kalmar in Kalmar län (0480) : 10 digit
@@ -2241,7 +2241,7 @@ if(($found['number'] == '') && (($substr[6] === '+46480') && ($len == 12))) {
    //Kalmar in Kalmar län (0480) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Kalmar', 'region' => 'Kalmar län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46481') && ($len == 12))) {
    //Nybro in Kalmar län (0481) : 10 digit
@@ -2259,7 +2259,7 @@ if(($found['number'] == '') && (($substr[6] === '+46481') && ($len == 12))) {
    //Nybro in Kalmar län (0481) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Nybro', 'region' => 'Kalmar län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46485') && ($len == 12))) {
    //Öland in Kalmar län (0485) : 10 digit
@@ -2277,7 +2277,7 @@ if(($found['number'] == '') && (($substr[6] === '+46485') && ($len == 12))) {
    //Öland in Kalmar län (0485) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Öland', 'region' => 'Kalmar län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46486') && ($len == 12))) {
    //Torsås in Kalmar län (0486) : 10 digit
@@ -2295,7 +2295,7 @@ if(($found['number'] == '') && (($substr[6] === '+46486') && ($len == 12))) {
    //Torsås in Kalmar län (0486) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Torsås', 'region' => 'Kalmar län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46490') && ($len == 12))) {
    //Västervik in Kalmar län (0490) : 10 digit
@@ -2313,7 +2313,7 @@ if(($found['number'] == '') && (($substr[6] === '+46490') && ($len == 12))) {
    //Västervik in Kalmar län (0490) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Västervik', 'region' => 'Kalmar län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46491') && ($len == 12))) {
    //Oskarshamn-Högsby in Kalmar län (0491) : 10 digit
@@ -2331,7 +2331,7 @@ if(($found['number'] == '') && (($substr[6] === '+46491') && ($len == 12))) {
    //Oskarshamn-Högsby in Kalmar län (0491) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Oskarshamn-Högsby', 'region' => 'Kalmar län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46492') && ($len == 12))) {
    //Vimmerby in Kalmar län (0492) : 10 digit
@@ -2349,7 +2349,7 @@ if(($found['number'] == '') && (($substr[6] === '+46492') && ($len == 12))) {
    //Vimmerby in Kalmar län (0492) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Vimmerby', 'region' => 'Kalmar län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46493') && ($len == 12))) {
    //Gamleby in Kalmar län (0493) : 10 digit
@@ -2367,7 +2367,7 @@ if(($found['number'] == '') && (($substr[6] === '+46493') && ($len == 12))) {
    //Gamleby in Kalmar län (0493) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Gamleby', 'region' => 'Kalmar län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46494') && ($len == 12))) {
    //Kisa in Östergötalands län (0494) : 10 digit
@@ -2385,7 +2385,7 @@ if(($found['number'] == '') && (($substr[6] === '+46494') && ($len == 12))) {
    //Kisa in Östergötalands län (0494) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Kisa', 'region' => 'Östergötalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46495') && ($len == 12))) {
    //Hultsfred-Virserum in Kalmar län (0495) : 10 digit
@@ -2403,7 +2403,7 @@ if(($found['number'] == '') && (($substr[6] === '+46495') && ($len == 12))) {
    //Hultsfred-Virserum in Kalmar län (0495) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Hultsfred-Virserum', 'region' => 'Kalmar län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46496') && ($len == 12))) {
    //Mariannelund in Jönköpings län (0496) : 10 digit
@@ -2421,7 +2421,7 @@ if(($found['number'] == '') && (($substr[6] === '+46496') && ($len == 12))) {
    //Mariannelund in Jönköpings län (0496) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Mariannelund', 'region' => 'Jönköpings län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46498') && ($len == 12))) {
    //Gotland in Gotlands län (0498) : 10 digit
@@ -2439,7 +2439,7 @@ if(($found['number'] == '') && (($substr[6] === '+46498') && ($len == 12))) {
    //Gotland in Gotlands län (0498) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Gotland', 'region' => 'Gotlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46499') && ($len == 12))) {
    //Mönsterås in Kalmar län (0499) : 10 digit
@@ -2457,7 +2457,7 @@ if(($found['number'] == '') && (($substr[6] === '+46499') && ($len == 12))) {
    //Mönsterås in Kalmar län (0499) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Mönsterås', 'region' => 'Kalmar län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46500') && ($len == 12))) {
    //Skövde in Västra Götalands län (0500) : 10 digit
@@ -2475,7 +2475,7 @@ if(($found['number'] == '') && (($substr[6] === '+46500') && ($len == 12))) {
    //Skövde in Västra Götalands län (0500) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Skövde', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46501') && ($len == 12))) {
    //Mariestad in Västra Götalands län (0501) : 10 digit
@@ -2493,7 +2493,7 @@ if(($found['number'] == '') && (($substr[6] === '+46501') && ($len == 12))) {
    //Mariestad in Västra Götalands län (0501) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Mariestad', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46502') && ($len == 12))) {
    //Tidaholm in Västra Götalands län (0502) : 10 digit
@@ -2511,7 +2511,7 @@ if(($found['number'] == '') && (($substr[6] === '+46502') && ($len == 12))) {
    //Tidaholm in Västra Götalands län (0502) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Tidaholm', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46503') && ($len == 12))) {
    //Hjo in Västra Götalands län (0503) : 10 digit
@@ -2529,7 +2529,7 @@ if(($found['number'] == '') && (($substr[6] === '+46503') && ($len == 12))) {
    //Hjo in Västra Götalands län (0503) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Hjo', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46504') && ($len == 12))) {
    //Tibro in Västra Götalands län (0504) : 10 digit
@@ -2547,7 +2547,7 @@ if(($found['number'] == '') && (($substr[6] === '+46504') && ($len == 12))) {
    //Tibro in Västra Götalands län (0504) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Tibro', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46505') && ($len == 12))) {
    //Karlsborg in Västra Götalands län (0505) : 10 digit
@@ -2565,7 +2565,7 @@ if(($found['number'] == '') && (($substr[6] === '+46505') && ($len == 12))) {
    //Karlsborg in Västra Götalands län (0505) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Karlsborg', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46506') && ($len == 12))) {
    //Töreboda-Hova in Västra Götalands län (0506) : 10 digit
@@ -2583,7 +2583,7 @@ if(($found['number'] == '') && (($substr[6] === '+46506') && ($len == 12))) {
    //Töreboda-Hova in Västra Götalands län (0506) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Töreboda-Hova', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46510') && ($len == 12))) {
    //Lidköping in Västra Götalands län (0510) : 10 digit
@@ -2601,7 +2601,7 @@ if(($found['number'] == '') && (($substr[6] === '+46510') && ($len == 12))) {
    //Lidköping in Västra Götalands län (0510) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Lidköping', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46511') && ($len == 12))) {
    //Skara-Götene in Västra Götalands län (0511) : 10 digit
@@ -2619,7 +2619,7 @@ if(($found['number'] == '') && (($substr[6] === '+46511') && ($len == 12))) {
    //Skara-Götene in Västra Götalands län (0511) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Skara-Götene', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46512') && ($len == 12))) {
    //Vara-Nossebro in Västra Götalands län (0512) : 10 digit
@@ -2637,7 +2637,7 @@ if(($found['number'] == '') && (($substr[6] === '+46512') && ($len == 12))) {
    //Vara-Nossebro in Västra Götalands län (0512) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Vara-Nossebro', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46513') && ($len == 12))) {
    //Herrljunga in Västra Götalands län (0513) : 10 digit
@@ -2655,7 +2655,7 @@ if(($found['number'] == '') && (($substr[6] === '+46513') && ($len == 12))) {
    //Herrljunga in Västra Götalands län (0513) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Herrljunga', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46514') && ($len == 12))) {
    //Grästorp in Västra Götalands län (0514) : 10 digit
@@ -2673,7 +2673,7 @@ if(($found['number'] == '') && (($substr[6] === '+46514') && ($len == 12))) {
    //Grästorp in Västra Götalands län (0514) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Grästorp', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46515') && ($len == 12))) {
    //Falköping in Västra Götalands län (0515) : 10 digit
@@ -2691,7 +2691,7 @@ if(($found['number'] == '') && (($substr[6] === '+46515') && ($len == 12))) {
    //Falköping in Västra Götalands län (0515) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Falköping', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46520') && ($len == 12))) {
    //Trollhättan in Västra Götalands län (0520) : 10 digit
@@ -2709,7 +2709,7 @@ if(($found['number'] == '') && (($substr[6] === '+46520') && ($len == 12))) {
    //Trollhättan in Västra Götalands län (0520) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Trollhättan', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46521') && ($len == 12))) {
    //Vänersborg in Västra Götalands län (0521) : 10 digit
@@ -2727,7 +2727,7 @@ if(($found['number'] == '') && (($substr[6] === '+46521') && ($len == 12))) {
    //Vänersborg in Västra Götalands län (0521) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Vänersborg', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46522') && ($len == 12))) {
    //Uddevalla in Västra Götalands län (0522) : 10 digit
@@ -2745,7 +2745,7 @@ if(($found['number'] == '') && (($substr[6] === '+46522') && ($len == 12))) {
    //Uddevalla in Västra Götalands län (0522) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Uddevalla', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46523') && ($len == 12))) {
    //Lysekil in Västra Götalands län (0523) : 10 digit
@@ -2763,7 +2763,7 @@ if(($found['number'] == '') && (($substr[6] === '+46523') && ($len == 12))) {
    //Lysekil in Västra Götalands län (0523) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Lysekil', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46524') && ($len == 12))) {
    //Munkedal in Västra Götalands län (0524) : 10 digit
@@ -2781,7 +2781,7 @@ if(($found['number'] == '') && (($substr[6] === '+46524') && ($len == 12))) {
    //Munkedal in Västra Götalands län (0524) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Munkedal', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46525') && ($len == 12))) {
    //Grebbestad in Västra Götalands län (0525) : 10 digit
@@ -2799,7 +2799,7 @@ if(($found['number'] == '') && (($substr[6] === '+46525') && ($len == 12))) {
    //Grebbestad in Västra Götalands län (0525) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Grebbestad', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46526') && ($len == 12))) {
    //Strömstad in Västra Götalands län (0526) : 10 digit
@@ -2817,7 +2817,7 @@ if(($found['number'] == '') && (($substr[6] === '+46526') && ($len == 12))) {
    //Strömstad in Västra Götalands län (0526) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Strömstad', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46528') && ($len == 12))) {
    //Färgelanda in Västra Götalands län (0528) : 10 digit
@@ -2835,7 +2835,7 @@ if(($found['number'] == '') && (($substr[6] === '+46528') && ($len == 12))) {
    //Färgelanda in Västra Götalands län (0528) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Färgelanda', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46530') && ($len == 12))) {
    //Mellerud in Västra Götalands län (0530) : 10 digit
@@ -2853,7 +2853,7 @@ if(($found['number'] == '') && (($substr[6] === '+46530') && ($len == 12))) {
    //Mellerud in Västra Götalands län (0530) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Mellerud', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46531') && ($len == 12))) {
    //Bengtsfors in Västra Götalands län (0531) : 10 digit
@@ -2871,7 +2871,7 @@ if(($found['number'] == '') && (($substr[6] === '+46531') && ($len == 12))) {
    //Bengtsfors in Västra Götalands län (0531) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Bengtsfors', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46532') && ($len == 12))) {
    //Åmål in Västra Götalands län (0532) : 10 digit
@@ -2889,7 +2889,7 @@ if(($found['number'] == '') && (($substr[6] === '+46532') && ($len == 12))) {
    //Åmål in Västra Götalands län (0532) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Åmål', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46533') && ($len == 12))) {
    //Säffle in Värmlands län (0533) : 10 digit
@@ -2907,7 +2907,7 @@ if(($found['number'] == '') && (($substr[6] === '+46533') && ($len == 12))) {
    //Säffle in Värmlands län (0533) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Säffle', 'region' => 'Värmlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46534') && ($len == 12))) {
    //Ed in Östergötlands län (0534) : 10 digit
@@ -2925,7 +2925,7 @@ if(($found['number'] == '') && (($substr[6] === '+46534') && ($len == 12))) {
    //Ed in Östergötlands län (0534) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Ed', 'region' => 'Östergötlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46550') && ($len == 12))) {
    //Kristinehamn in Värmlands län (0550) : 10 digit
@@ -2943,7 +2943,7 @@ if(($found['number'] == '') && (($substr[6] === '+46550') && ($len == 12))) {
    //Kristinehamn in Värmlands län (0550) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Kristinehamn', 'region' => 'Värmlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46551') && ($len == 12))) {
    //Gullspång in Västra Götalands län (0551) : 10 digit
@@ -2961,7 +2961,7 @@ if(($found['number'] == '') && (($substr[6] === '+46551') && ($len == 12))) {
    //Gullspång in Västra Götalands län (0551) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Gullspång', 'region' => 'Västra Götalands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46552') && ($len == 12))) {
    //Deje in Värmlands län (0552) : 10 digit
@@ -2979,7 +2979,7 @@ if(($found['number'] == '') && (($substr[6] === '+46552') && ($len == 12))) {
    //Deje in Värmlands län (0552) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Deje', 'region' => 'Värmlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46553') && ($len == 12))) {
    //Molkolm in Värmlands län (0553) : 10 digit
@@ -2997,7 +2997,7 @@ if(($found['number'] == '') && (($substr[6] === '+46553') && ($len == 12))) {
    //Molkolm in Värmlands län (0553) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Molkolm', 'region' => 'Värmlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46554') && ($len == 12))) {
    //Kil in Värmlands län (0554) : 10 digit
@@ -3015,7 +3015,7 @@ if(($found['number'] == '') && (($substr[6] === '+46554') && ($len == 12))) {
    //Kil in Värmlands län (0554) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Kil', 'region' => 'Värmlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46555') && ($len == 12))) {
    //Grums in Värmlands län (0555) : 10 digit
@@ -3033,7 +3033,7 @@ if(($found['number'] == '') && (($substr[6] === '+46555') && ($len == 12))) {
    //Grums in Värmlands län (0555) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Grums', 'region' => 'Värmlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46560') && ($len == 12))) {
    //Torsby in Värmlands län (0560) : 10 digit
@@ -3051,7 +3051,7 @@ if(($found['number'] == '') && (($substr[6] === '+46560') && ($len == 12))) {
    //Torsby in Värmlands län (0560) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Torsby', 'region' => 'Värmlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46563') && ($len == 12))) {
    //Hagfors-Munkfors in Värmlands län (0563) : 10 digit
@@ -3069,7 +3069,7 @@ if(($found['number'] == '') && (($substr[6] === '+46563') && ($len == 12))) {
    //Hagfors-Munkfors in Värmlands län (0563) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Hagfors-Munkfors', 'region' => 'Värmlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46564') && ($len == 12))) {
    //Sysslebäck in Värmlands län (0564) : 10 digit
@@ -3087,7 +3087,7 @@ if(($found['number'] == '') && (($substr[6] === '+46564') && ($len == 12))) {
    //Sysslebäck in Värmlands län (0564) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Sysslebäck', 'region' => 'Värmlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46565') && ($len == 12))) {
    //Sunne in Värmlands län (0565) : 10 digit
@@ -3105,7 +3105,7 @@ if(($found['number'] == '') && (($substr[6] === '+46565') && ($len == 12))) {
    //Sunne in Värmlands län (0565) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Sunne', 'region' => 'Värmlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46570') && ($len == 12))) {
    //Arvika in Värmlands län (0570) : 10 digit
@@ -3123,7 +3123,7 @@ if(($found['number'] == '') && (($substr[6] === '+46570') && ($len == 12))) {
    //Arvika in Värmlands län (0570) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Arvika', 'region' => 'Värmlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46571') && ($len == 12))) {
    //Charlottenberg-Åmotfors in Värmlands län (0571) : 10 digit
@@ -3141,7 +3141,7 @@ if(($found['number'] == '') && (($substr[6] === '+46571') && ($len == 12))) {
    //Charlottenberg-Åmotfors in Värmlands län (0571) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Charlottenberg-Åmotfors', 'region' => 'Värmlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46573') && ($len == 12))) {
    //Årjäng in Värmlands län (0573) : 10 digit
@@ -3159,7 +3159,7 @@ if(($found['number'] == '') && (($substr[6] === '+46573') && ($len == 12))) {
    //Årjäng in Värmlands län (0573) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Årjäng', 'region' => 'Värmlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46580') && ($len == 12))) {
    //Kopparberg in Örebro län (0580) : 10 digit
@@ -3177,7 +3177,7 @@ if(($found['number'] == '') && (($substr[6] === '+46580') && ($len == 12))) {
    //Kopparberg in Örebro län (0580) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Kopparberg', 'region' => 'Örebro län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46581') && ($len == 12))) {
    //Lindesberg in Örebro län (0581) : 10 digit
@@ -3195,7 +3195,7 @@ if(($found['number'] == '') && (($substr[6] === '+46581') && ($len == 12))) {
    //Lindesberg in Örebro län (0581) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Lindesberg', 'region' => 'Örebro län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46582') && ($len == 12))) {
    //Hallsberg in Örebro län (0582) : 10 digit
@@ -3213,7 +3213,7 @@ if(($found['number'] == '') && (($substr[6] === '+46582') && ($len == 12))) {
    //Hallsberg in Örebro län (0582) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Hallsberg', 'region' => 'Örebro län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46583') && ($len == 12))) {
    //Askersund in Örebro län (0583) : 10 digit
@@ -3231,7 +3231,7 @@ if(($found['number'] == '') && (($substr[6] === '+46583') && ($len == 12))) {
    //Askersund in Örebro län (0583) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Askersund', 'region' => 'Örebro län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46584') && ($len == 12))) {
    //Laxå in Örebro län (0584) : 10 digit
@@ -3249,7 +3249,7 @@ if(($found['number'] == '') && (($substr[6] === '+46584') && ($len == 12))) {
    //Laxå in Örebro län (0584) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Laxå', 'region' => 'Örebro län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46585') && ($len == 12))) {
    //Fjugesta-Svartå in Örebro län (0585) : 10 digit
@@ -3267,7 +3267,7 @@ if(($found['number'] == '') && (($substr[6] === '+46585') && ($len == 12))) {
    //Fjugesta-Svartå in Örebro län (0585) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Fjugesta-Svartå', 'region' => 'Örebro län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46586') && ($len == 12))) {
    //Karlskoga in Örebro län (0586) : 10 digit
@@ -3285,7 +3285,7 @@ if(($found['number'] == '') && (($substr[6] === '+46586') && ($len == 12))) {
    //Karlskoga in Örebro län (0586) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Karlskoga', 'region' => 'Örebro län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46587') && ($len == 12))) {
    //Nora in Örebro län (0587) : 10 digit
@@ -3303,7 +3303,7 @@ if(($found['number'] == '') && (($substr[6] === '+46587') && ($len == 12))) {
    //Nora in Örebro län (0587) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Nora', 'region' => 'Örebro län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46589') && ($len == 12))) {
    //Arboga in Västmanlands län (0589) : 10 digit
@@ -3321,7 +3321,7 @@ if(($found['number'] == '') && (($substr[6] === '+46589') && ($len == 12))) {
    //Arboga in Västmanlands län (0589) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Arboga', 'region' => 'Västmanlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46590') && ($len == 12))) {
    //Filipstad in Värmlands län (0590) : 10 digit
@@ -3339,7 +3339,7 @@ if(($found['number'] == '') && (($substr[6] === '+46590') && ($len == 12))) {
    //Filipstad in Värmlands län (0590) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Filipstad', 'region' => 'Värmlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46591') && ($len == 12))) {
    //Hällefors-Grythyttan in Örebro län (0591) : 10 digit
@@ -3357,7 +3357,7 @@ if(($found['number'] == '') && (($substr[6] === '+46591') && ($len == 12))) {
    //Hällefors-Grythyttan in Örebro län (0591) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Hällefors-Grythyttan', 'region' => 'Örebro län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46611') && ($len == 12))) {
    //Härnösand in Västernorrlands län (0611) : 10 digit
@@ -3375,7 +3375,7 @@ if(($found['number'] == '') && (($substr[6] === '+46611') && ($len == 12))) {
    //Härnösand in Västernorrlands län (0611) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Härnösand', 'region' => 'Västernorrlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46612') && ($len == 12))) {
    //Kramfors in Västernorrlands län (0612) : 10 digit
@@ -3393,7 +3393,7 @@ if(($found['number'] == '') && (($substr[6] === '+46612') && ($len == 12))) {
    //Kramfors in Västernorrlands län (0612) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Kramfors', 'region' => 'Västernorrlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46613') && ($len == 12))) {
    //Ullånger in Västernorrlands län (0613) : 10 digit
@@ -3411,7 +3411,7 @@ if(($found['number'] == '') && (($substr[6] === '+46613') && ($len == 12))) {
    //Ullånger in Västernorrlands län (0613) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Ullånger', 'region' => 'Västernorrlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46620') && ($len == 12))) {
    //Sollefteå in Västernorrlands län (0620) : 10 digit
@@ -3429,7 +3429,7 @@ if(($found['number'] == '') && (($substr[6] === '+46620') && ($len == 12))) {
    //Sollefteå in Västernorrlands län (0620) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Sollefteå', 'region' => 'Västernorrlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46621') && ($len == 12))) {
    //Junsele in Västernorrlands län (0621) : 10 digit
@@ -3447,7 +3447,7 @@ if(($found['number'] == '') && (($substr[6] === '+46621') && ($len == 12))) {
    //Junsele in Västernorrlands län (0621) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Junsele', 'region' => 'Västernorrlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46622') && ($len == 12))) {
    //Näsåker in Västernorrlands län (0622) : 10 digit
@@ -3465,7 +3465,7 @@ if(($found['number'] == '') && (($substr[6] === '+46622') && ($len == 12))) {
    //Näsåker in Västernorrlands län (0622) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Näsåker', 'region' => 'Västernorrlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46623') && ($len == 12))) {
    //Ramsele in Västernorrlands län (0623) : 10 digit
@@ -3483,7 +3483,7 @@ if(($found['number'] == '') && (($substr[6] === '+46623') && ($len == 12))) {
    //Ramsele in Västernorrlands län (0623) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Ramsele', 'region' => 'Västernorrlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46624') && ($len == 12))) {
    //Backe in Jämtlands län (0624) : 10 digit
@@ -3501,7 +3501,7 @@ if(($found['number'] == '') && (($substr[6] === '+46624') && ($len == 12))) {
    //Backe in Jämtlands län (0624) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Backe', 'region' => 'Jämtlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46640') && ($len == 12))) {
    //Krokom in Jämtlands län (0640) : 10 digit
@@ -3519,7 +3519,7 @@ if(($found['number'] == '') && (($substr[6] === '+46640') && ($len == 12))) {
    //Krokom in Jämtlands län (0640) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Krokom', 'region' => 'Jämtlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46642') && ($len == 12))) {
    //Lit in Jämtlands län (0642) : 10 digit
@@ -3537,7 +3537,7 @@ if(($found['number'] == '') && (($substr[6] === '+46642') && ($len == 12))) {
    //Lit in Jämtlands län (0642) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Lit', 'region' => 'Jämtlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46643') && ($len == 12))) {
    //Hallen-Oviken in Jämtlands län (0643) : 10 digit
@@ -3555,7 +3555,7 @@ if(($found['number'] == '') && (($substr[6] === '+46643') && ($len == 12))) {
    //Hallen-Oviken in Jämtlands län (0643) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Hallen-Oviken', 'region' => 'Jämtlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46644') && ($len == 12))) {
    //Hammerdal in Jämtlands län (0644) : 10 digit
@@ -3573,7 +3573,7 @@ if(($found['number'] == '') && (($substr[6] === '+46644') && ($len == 12))) {
    //Hammerdal in Jämtlands län (0644) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Hammerdal', 'region' => 'Jämtlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46645') && ($len == 12))) {
    //Föllinge in Jämtlands län (0645) : 10 digit
@@ -3591,7 +3591,7 @@ if(($found['number'] == '') && (($substr[6] === '+46645') && ($len == 12))) {
    //Föllinge in Jämtlands län (0645) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Föllinge', 'region' => 'Jämtlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46647') && ($len == 12))) {
    //Åre-Järpen in Jämtlands län (0647) : 10 digit
@@ -3609,7 +3609,7 @@ if(($found['number'] == '') && (($substr[6] === '+46647') && ($len == 12))) {
    //Åre-Järpen in Jämtlands län (0647) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Åre-Järpen', 'region' => 'Jämtlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46650') && ($len == 12))) {
    //Hudiksvall in Gävleborgs län (0650) : 10 digit
@@ -3627,7 +3627,7 @@ if(($found['number'] == '') && (($substr[6] === '+46650') && ($len == 12))) {
    //Hudiksvall in Gävleborgs län (0650) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Hudiksvall', 'region' => 'Gävleborgs län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46651') && ($len == 12))) {
    //Ljusdal in Gävleborgs län (0651) : 10 digit
@@ -3645,7 +3645,7 @@ if(($found['number'] == '') && (($substr[6] === '+46651') && ($len == 12))) {
    //Ljusdal in Gävleborgs län (0651) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Ljusdal', 'region' => 'Gävleborgs län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46652') && ($len == 12))) {
    //Bergsjö in Gävleborgs län (0652) : 10 digit
@@ -3663,7 +3663,7 @@ if(($found['number'] == '') && (($substr[6] === '+46652') && ($len == 12))) {
    //Bergsjö in Gävleborgs län (0652) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Bergsjö', 'region' => 'Gävleborgs län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46653') && ($len == 12))) {
    //Delsbo in Gävleborgs län (0653) : 10 digit
@@ -3681,7 +3681,7 @@ if(($found['number'] == '') && (($substr[6] === '+46653') && ($len == 12))) {
    //Delsbo in Gävleborgs län (0653) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Delsbo', 'region' => 'Gävleborgs län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46657') && ($len == 12))) {
    //Los in Gävleborgs län (0657) : 10 digit
@@ -3699,7 +3699,7 @@ if(($found['number'] == '') && (($substr[6] === '+46657') && ($len == 12))) {
    //Los in Gävleborgs län (0657) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Los', 'region' => 'Gävleborgs län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46660') && ($len == 12))) {
    //Örnsköldsvik in Västernorrlands län (0660) : 10 digit
@@ -3717,7 +3717,7 @@ if(($found['number'] == '') && (($substr[6] === '+46660') && ($len == 12))) {
    //Örnsköldsvik in Västernorrlands län (0660) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Örnsköldsvik', 'region' => 'Västernorrlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46661') && ($len == 12))) {
    //Bredbyn in Västernorrlands län (0661) : 10 digit
@@ -3735,7 +3735,7 @@ if(($found['number'] == '') && (($substr[6] === '+46661') && ($len == 12))) {
    //Bredbyn in Västernorrlands län (0661) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Bredbyn', 'region' => 'Västernorrlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46662') && ($len == 12))) {
    //Björna in Västernorrlands län (0662) : 10 digit
@@ -3753,7 +3753,7 @@ if(($found['number'] == '') && (($substr[6] === '+46662') && ($len == 12))) {
    //Björna in Västernorrlands län (0662) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Björna', 'region' => 'Västernorrlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46663') && ($len == 12))) {
    //Husum in Västernorrlands län (0663) : 10 digit
@@ -3771,7 +3771,7 @@ if(($found['number'] == '') && (($substr[6] === '+46663') && ($len == 12))) {
    //Husum in Västernorrlands län (0663) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Husum', 'region' => 'Västernorrlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46670') && ($len == 12))) {
    //Strömsund in Jämtlands län (0670) : 10 digit
@@ -3789,7 +3789,7 @@ if(($found['number'] == '') && (($substr[6] === '+46670') && ($len == 12))) {
    //Strömsund in Jämtlands län (0670) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Strömsund', 'region' => 'Jämtlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46671') && ($len == 12))) {
    //Hoting in Jämtlands län (0671) : 10 digit
@@ -3807,7 +3807,7 @@ if(($found['number'] == '') && (($substr[6] === '+46671') && ($len == 12))) {
    //Hoting in Jämtlands län (0671) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Hoting', 'region' => 'Jämtlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46672') && ($len == 12))) {
    //Gäddede in Jämtlands län (0672) : 10 digit
@@ -3825,7 +3825,7 @@ if(($found['number'] == '') && (($substr[6] === '+46672') && ($len == 12))) {
    //Gäddede in Jämtlands län (0672) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Gäddede', 'region' => 'Jämtlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46680') && ($len == 12))) {
    //Sveg in Jämtlands län (0680) : 10 digit
@@ -3843,7 +3843,7 @@ if(($found['number'] == '') && (($substr[6] === '+46680') && ($len == 12))) {
    //Sveg in Jämtlands län (0680) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Sveg', 'region' => 'Jämtlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46682') && ($len == 12))) {
    //Rätan in Jämtlands län (0682) : 10 digit
@@ -3861,7 +3861,7 @@ if(($found['number'] == '') && (($substr[6] === '+46682') && ($len == 12))) {
    //Rätan in Jämtlands län (0682) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Rätan', 'region' => 'Jämtlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46684') && ($len == 12))) {
    //Hede-Funäsdalen in Jämtlands län (0684) : 10 digit
@@ -3879,7 +3879,7 @@ if(($found['number'] == '') && (($substr[6] === '+46684') && ($len == 12))) {
    //Hede-Funäsdalen in Jämtlands län (0684) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Hede-Funäsdalen', 'region' => 'Jämtlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46687') && ($len == 12))) {
    //Svenstavik in Jämtlands län (0687) : 10 digit
@@ -3897,7 +3897,7 @@ if(($found['number'] == '') && (($substr[6] === '+46687') && ($len == 12))) {
    //Svenstavik in Jämtlands län (0687) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Svenstavik', 'region' => 'Jämtlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46690') && ($len == 12))) {
    //Ånge in Västernorrlands län (0690) : 10 digit
@@ -3915,7 +3915,7 @@ if(($found['number'] == '') && (($substr[6] === '+46690') && ($len == 12))) {
    //Ånge in Västernorrlands län (0690) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Ånge', 'region' => 'Västernorrlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46691') && ($len == 12))) {
    //Torpshammar in Västernorrlands län (0691) : 10 digit
@@ -3933,7 +3933,7 @@ if(($found['number'] == '') && (($substr[6] === '+46691') && ($len == 12))) {
    //Torpshammar in Västernorrlands län (0691) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Torpshammar', 'region' => 'Västernorrlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46692') && ($len == 12))) {
    //Liden in Västernorrlands län (0692) : 10 digit
@@ -3951,7 +3951,7 @@ if(($found['number'] == '') && (($substr[6] === '+46692') && ($len == 12))) {
    //Liden in Västernorrlands län (0692) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Liden', 'region' => 'Västernorrlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46693') && ($len == 12))) {
    //Bräcke-Gällö in Jämtlands län (0693) : 10 digit
@@ -3969,7 +3969,7 @@ if(($found['number'] == '') && (($substr[6] === '+46693') && ($len == 12))) {
    //Bräcke-Gällö in Jämtlands län (0693) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Bräcke-Gällö', 'region' => 'Jämtlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46695') && ($len == 12))) {
    //Stugun in Jämtlands län (0695) : 10 digit
@@ -3987,7 +3987,7 @@ if(($found['number'] == '') && (($substr[6] === '+46695') && ($len == 12))) {
    //Stugun in Jämtlands län (0695) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Stugun', 'region' => 'Jämtlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46696') && ($len == 12))) {
    //Hammarstrand in Jämtlands län (0696) : 10 digit
@@ -4005,7 +4005,7 @@ if(($found['number'] == '') && (($substr[6] === '+46696') && ($len == 12))) {
    //Hammarstrand in Jämtlands län (0696) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Hammarstrand', 'region' => 'Jämtlands län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46910') && ($len == 12))) {
    //Skellefteå in Västerbottens län (0910) : 10 digit
@@ -4023,7 +4023,7 @@ if(($found['number'] == '') && (($substr[6] === '+46910') && ($len == 12))) {
    //Skellefteå in Västerbottens län (0910) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Skellefteå', 'region' => 'Västerbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46911') && ($len == 12))) {
    //Piteå in Norrbottens län (0911) : 10 digit
@@ -4041,7 +4041,7 @@ if(($found['number'] == '') && (($substr[6] === '+46911') && ($len == 12))) {
    //Piteå in Norrbottens län (0911) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Piteå', 'region' => 'Norrbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46912') && ($len == 12))) {
    //Byske in Västerbottens län (0912) : 10 digit
@@ -4059,7 +4059,7 @@ if(($found['number'] == '') && (($substr[6] === '+46912') && ($len == 12))) {
    //Byske in Västerbottens län (0912) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Byske', 'region' => 'Västerbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46913') && ($len == 12))) {
    //Lövånger in Västerbottens län (0913) : 10 digit
@@ -4077,7 +4077,7 @@ if(($found['number'] == '') && (($substr[6] === '+46913') && ($len == 12))) {
    //Lövånger in Västerbottens län (0913) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Lövånger', 'region' => 'Västerbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46914') && ($len == 12))) {
    //Burträsk in Västerbottens län (0914) : 10 digit
@@ -4095,7 +4095,7 @@ if(($found['number'] == '') && (($substr[6] === '+46914') && ($len == 12))) {
    //Burträsk in Västerbottens län (0914) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Burträsk', 'region' => 'Västerbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46915') && ($len == 12))) {
    //Bastuträsk in Västerbottens län (0915) : 10 digit
@@ -4113,7 +4113,7 @@ if(($found['number'] == '') && (($substr[6] === '+46915') && ($len == 12))) {
    //Bastuträsk in Västerbottens län (0915) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Bastuträsk', 'region' => 'Västerbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46916') && ($len == 12))) {
    //Jörn in Västerbottens län (0916) : 10 digit
@@ -4131,7 +4131,7 @@ if(($found['number'] == '') && (($substr[6] === '+46916') && ($len == 12))) {
    //Jörn in Västerbottens län (0916) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Jörn', 'region' => 'Västerbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46918') && ($len == 12))) {
    //Norsjö in Västerbottens län (0918) : 10 digit
@@ -4149,7 +4149,7 @@ if(($found['number'] == '') && (($substr[6] === '+46918') && ($len == 12))) {
    //Norsjö in Västerbottens län (0918) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Norsjö', 'region' => 'Västerbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46920') && ($len == 12))) {
    //Luleå in Norrbottens län (0920) : 10 digit
@@ -4167,7 +4167,7 @@ if(($found['number'] == '') && (($substr[6] === '+46920') && ($len == 12))) {
    //Luleå in Norrbottens län (0920) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Luleå', 'region' => 'Norrbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46921') && ($len == 12))) {
    //Boden in Norrbottens län (0921) : 10 digit
@@ -4185,7 +4185,7 @@ if(($found['number'] == '') && (($substr[6] === '+46921') && ($len == 12))) {
    //Boden in Norrbottens län (0921) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Boden', 'region' => 'Norrbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46922') && ($len == 12))) {
    //Haparanda in Norrbottens län (0922) : 10 digit
@@ -4203,7 +4203,7 @@ if(($found['number'] == '') && (($substr[6] === '+46922') && ($len == 12))) {
    //Haparanda in Norrbottens län (0922) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Haparanda', 'region' => 'Norrbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46923') && ($len == 12))) {
    //Kalix in Norrbottens län (0923) : 10 digit
@@ -4221,7 +4221,7 @@ if(($found['number'] == '') && (($substr[6] === '+46923') && ($len == 12))) {
    //Kalix in Norrbottens län (0923) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Kalix', 'region' => 'Norrbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46924') && ($len == 12))) {
    //Råneå in Norrbottens län (0924) : 10 digit
@@ -4239,7 +4239,7 @@ if(($found['number'] == '') && (($substr[6] === '+46924') && ($len == 12))) {
    //Råneå in Norrbottens län (0924) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Råneå', 'region' => 'Norrbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46925') && ($len == 12))) {
    //Lakaträsk in Norrbottens län (0925) : 10 digit
@@ -4257,7 +4257,7 @@ if(($found['number'] == '') && (($substr[6] === '+46925') && ($len == 12))) {
    //Lakaträsk in Norrbottens län (0925) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Lakaträsk', 'region' => 'Norrbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46926') && ($len == 12))) {
    //Överkalix in Norrbottens län (0926) : 10 digit
@@ -4275,7 +4275,7 @@ if(($found['number'] == '') && (($substr[6] === '+46926') && ($len == 12))) {
    //Överkalix in Norrbottens län (0926) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Överkalix', 'region' => 'Norrbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46927') && ($len == 12))) {
    //Övertorneå in Norrbottens län (0927) : 10 digit
@@ -4293,7 +4293,7 @@ if(($found['number'] == '') && (($substr[6] === '+46927') && ($len == 12))) {
    //Övertorneå in Norrbottens län (0927) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Övertorneå', 'region' => 'Norrbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46928') && ($len == 12))) {
    //Harads in Norrbottens län (0928) : 10 digit
@@ -4311,7 +4311,7 @@ if(($found['number'] == '') && (($substr[6] === '+46928') && ($len == 12))) {
    //Harads in Norrbottens län (0928) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Harads', 'region' => 'Norrbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46929') && ($len == 12))) {
    //Älvsbyn in Norrbottens län (0929) : 10 digit
@@ -4329,7 +4329,7 @@ if(($found['number'] == '') && (($substr[6] === '+46929') && ($len == 12))) {
    //Älvsbyn in Norrbottens län (0929) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Älvsbyn', 'region' => 'Norrbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46930') && ($len == 12))) {
    //Nordmaling in Västerbottens län (0930) : 10 digit
@@ -4347,7 +4347,7 @@ if(($found['number'] == '') && (($substr[6] === '+46930') && ($len == 12))) {
    //Nordmaling in Västerbottens län (0930) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Nordmaling', 'region' => 'Västerbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46932') && ($len == 12))) {
    //Bjurholm in Västerbottens län (0932) : 10 digit
@@ -4365,7 +4365,7 @@ if(($found['number'] == '') && (($substr[6] === '+46932') && ($len == 12))) {
    //Bjurholm in Västerbottens län (0932) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Bjurholm', 'region' => 'Västerbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46933') && ($len == 12))) {
    //Vindeln in Västerbottens län (0933) : 10 digit
@@ -4383,7 +4383,7 @@ if(($found['number'] == '') && (($substr[6] === '+46933') && ($len == 12))) {
    //Vindeln in Västerbottens län (0933) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Vindeln', 'region' => 'Västerbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46934') && ($len == 12))) {
    //Robertsfors in Västerbottens län (0934) : 10 digit
@@ -4401,7 +4401,7 @@ if(($found['number'] == '') && (($substr[6] === '+46934') && ($len == 12))) {
    //Robertsfors in Västerbottens län (0934) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Robertsfors', 'region' => 'Västerbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46935') && ($len == 12))) {
    //Vännäs in Västerbottens län (0935) : 10 digit
@@ -4419,7 +4419,7 @@ if(($found['number'] == '') && (($substr[6] === '+46935') && ($len == 12))) {
    //Vännäs in Västerbottens län (0935) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Vännäs', 'region' => 'Västerbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46940') && ($len == 12))) {
    //Vilhelmina in Västerbottens län (0940) : 10 digit
@@ -4437,7 +4437,7 @@ if(($found['number'] == '') && (($substr[6] === '+46940') && ($len == 12))) {
    //Vilhelmina in Västerbottens län (0940) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Vilhelmina', 'region' => 'Västerbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46941') && ($len == 12))) {
    //Åsele in Västerbottens län (0941) : 10 digit
@@ -4455,7 +4455,7 @@ if(($found['number'] == '') && (($substr[6] === '+46941') && ($len == 12))) {
    //Åsele in Västerbottens län (0941) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Åsele', 'region' => 'Västerbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46942') && ($len == 12))) {
    //Dorotea in Västerbottens län (0942) : 10 digit
@@ -4473,7 +4473,7 @@ if(($found['number'] == '') && (($substr[6] === '+46942') && ($len == 12))) {
    //Dorotea in Västerbottens län (0942) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Dorotea', 'region' => 'Västerbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46943') && ($len == 12))) {
    //Fredrika in Västerbottens län (0943) : 10 digit
@@ -4491,7 +4491,7 @@ if(($found['number'] == '') && (($substr[6] === '+46943') && ($len == 12))) {
    //Fredrika in Västerbottens län (0943) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Fredrika', 'region' => 'Västerbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46950') && ($len == 12))) {
    //Lycksele in Västerbottens län (0950) : 10 digit
@@ -4509,7 +4509,7 @@ if(($found['number'] == '') && (($substr[6] === '+46950') && ($len == 12))) {
    //Lycksele in Västerbottens län (0950) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Lycksele', 'region' => 'Västerbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46951') && ($len == 12))) {
    //Storuman in Västerbottens län (0951) : 10 digit
@@ -4527,7 +4527,7 @@ if(($found['number'] == '') && (($substr[6] === '+46951') && ($len == 12))) {
    //Storuman in Västerbottens län (0951) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Storuman', 'region' => 'Västerbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46952') && ($len == 12))) {
    //Sorsele in Västerbottens län (0952) : 10 digit
@@ -4545,7 +4545,7 @@ if(($found['number'] == '') && (($substr[6] === '+46952') && ($len == 12))) {
    //Sorsele in Västerbottens län (0952) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Sorsele', 'region' => 'Västerbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46953') && ($len == 12))) {
    //Malå in Västerbottens län (0953) : 10 digit
@@ -4563,7 +4563,7 @@ if(($found['number'] == '') && (($substr[6] === '+46953') && ($len == 12))) {
    //Malå in Västerbottens län (0953) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Malå', 'region' => 'Västerbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46954') && ($len == 12))) {
    //Tärnaby in Västerbottens län (0954) : 10 digit
@@ -4581,7 +4581,7 @@ if(($found['number'] == '') && (($substr[6] === '+46954') && ($len == 12))) {
    //Tärnaby in Västerbottens län (0954) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Tärnaby', 'region' => 'Västerbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46960') && ($len == 12))) {
    //Arvidsjaur in Norrbottens län (0960) : 10 digit
@@ -4599,7 +4599,7 @@ if(($found['number'] == '') && (($substr[6] === '+46960') && ($len == 12))) {
    //Arvidsjaur in Norrbottens län (0960) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Arvidsjaur', 'region' => 'Norrbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46961') && ($len == 12))) {
    //Arjeplog in Norrbottens län (0961) : 10 digit
@@ -4617,7 +4617,7 @@ if(($found['number'] == '') && (($substr[6] === '+46961') && ($len == 12))) {
    //Arjeplog in Norrbottens län (0961) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Arjeplog', 'region' => 'Norrbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46970') && ($len == 12))) {
    //Gällivare in Norrbottens län (0970) : 10 digit
@@ -4635,7 +4635,7 @@ if(($found['number'] == '') && (($substr[6] === '+46970') && ($len == 12))) {
    //Gällivare in Norrbottens län (0970) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Gällivare', 'region' => 'Norrbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46971') && ($len == 12))) {
    //Jokkmokk in Norrbottens län (0971) : 10 digit
@@ -4653,7 +4653,7 @@ if(($found['number'] == '') && (($substr[6] === '+46971') && ($len == 12))) {
    //Jokkmokk in Norrbottens län (0971) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Jokkmokk', 'region' => 'Norrbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46973') && ($len == 12))) {
    //Porjus in Norrbottens län (0973) : 10 digit
@@ -4671,7 +4671,7 @@ if(($found['number'] == '') && (($substr[6] === '+46973') && ($len == 12))) {
    //Porjus in Norrbottens län (0973) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Porjus', 'region' => 'Norrbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46975') && ($len == 12))) {
    //Hakkas in Norrbottens län (0975) : 10 digit
@@ -4689,7 +4689,7 @@ if(($found['number'] == '') && (($substr[6] === '+46975') && ($len == 12))) {
    //Hakkas in Norrbottens län (0975) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Hakkas', 'region' => 'Norrbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46976') && ($len == 12))) {
    //Vuollerim in Norrbottens län (0976) : 10 digit
@@ -4707,7 +4707,7 @@ if(($found['number'] == '') && (($substr[6] === '+46976') && ($len == 12))) {
    //Vuollerim in Norrbottens län (0976) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Vuollerim', 'region' => 'Norrbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46977') && ($len == 12))) {
    //Korpilombolo in Norrbottens län (0977) : 10 digit
@@ -4725,7 +4725,7 @@ if(($found['number'] == '') && (($substr[6] === '+46977') && ($len == 12))) {
    //Korpilombolo in Norrbottens län (0977) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Korpilombolo', 'region' => 'Norrbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46978') && ($len == 12))) {
    //Pajala in Norrbottens län (0978) : 10 digit
@@ -4743,7 +4743,7 @@ if(($found['number'] == '') && (($substr[6] === '+46978') && ($len == 12))) {
    //Pajala in Norrbottens län (0978) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Pajala', 'region' => 'Norrbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46980') && ($len == 12))) {
    //Kiruna in Norrbottens län (0980) : 10 digit
@@ -4761,7 +4761,7 @@ if(($found['number'] == '') && (($substr[6] === '+46980') && ($len == 12))) {
    //Kiruna in Norrbottens län (0980) : 13 digit
    $num = substr($phone, 3, 3) . ' - ' . substr($phone, 6, 3) . ' ' . substr($phone, 7, 3) . ' ' . substr($phone, 10, 3);
    $found = array('number' => '+46 ' . $num, 'local' => '0' . $num, 'city' => 'Kiruna', 'region' => 'Norrbottens län', 'country' => 'Sweden');
-}
+} else
 
 if(($found['number'] == '') && (($substr[6] === '+46981') && ($len == 12))) {
    //Vittangi in Norrbottens län (0981) : 10 digit
